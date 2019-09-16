@@ -8,7 +8,8 @@
     'map map map image'
     'map map map buttons'
     'map map map buttons'
-    'score score score score';
+    'score score score score';  
+    justify-content: space-between;	
 }
 
 .map-view{
