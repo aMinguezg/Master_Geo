@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<title>Evento click sobre mapa - Ejemplo del API JavaScript de Google Maps v3</title>
+    <style type="text/css">
+      html, body { height: 100%; margin: 0; padding: 0; }
+      #map_frame { height: 100%; }
+    </style>
+    <script async defer
+      src="https://maps.googleapis.com/maps/api/js?callback=initMap&key=AIzaSyAaBo7bx5QaWY44Z4In3u8BNLGJxHiiLzs">
+    </script>
+    <script type="text/javascript">
+	var map;
+	function initMap() {
+		var oviedo_eii = new google.maps.LatLng(43.354810,-5.851805);
+		var misOpciones = {
+		  center: oviedo_eii,
+		  zoom: 4,
+		  mapTypeId: google.maps.MapTypeId.ROADMAP
+		};
+	  map = new google.maps.Map(document.getElementById("map_frame"), misOpciones);
+
+	  // registra detector para el evento click
+	  google.maps.event.addListener(map, 'click', function(event) {
+		situarMarcador(event.latLng);
+	  });
+	}
+	
+	function situarMarcador(localizacion) {
+		var clickedLocation = new google.maps.LatLng(localizacion);
+		var marker = new google.maps.Marker({
+			position: localizacion, 
+			map: map
+		});
+
+		//map.setCenter(localizacion);
+		map.panTo(localizacion);
+	}  
+	
+    </script>
+  </head>
+
+  <body>
+    <div id="map_frame"></div>
+  </body>
+</html>

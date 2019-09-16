@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Juego del mapa</title>
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?callback=initMap&key=AIzaSyAaBo7bx5QaWY44Z4In3u8BNLGJxHiiLzs">
+    </script>
+    <script type="text/javascript">
+        var map;
+        function initMap() {
+            var oviedo_eii = new google.maps.LatLng(43.354810, -5.851805);
+            var misOpciones = {
+                center: oviedo_eii,
+                zoom: 14,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            };
+            map = new google.maps.Map(document.getElementById("map-view"), misOpciones);
+        }
+    </script>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="map-view" id="map-view">
+        </div>
+        <div class="image-view">
+        </div>
+        <div class="buttons-view">
+        </div>
+        <div class="score-view">
+        </div>
+    </div>
+</body>
+
+</html>

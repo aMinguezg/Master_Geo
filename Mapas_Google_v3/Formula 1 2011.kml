@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+<Document>
+  <name>Formula 1 2011</name>
+  <description><![CDATA[Localización de los circuitos de Campeonato 2011]]></description>
+  <NetworkLink>
+    <name>Formula 1 2011</name>
+    <Link>
+      <href>http://maps.google.es/maps/ms?ie=UTF8&amp;t=h&amp;hl=en&amp;vps=1&amp;jsv=327b&amp;oe=UTF8&amp;msa=0&amp;msid=203256667179912670800.000448b5f5c21a614709a&amp;output=kml</href>
+    </Link>
+  </NetworkLink>
+</Document>
+</kml>

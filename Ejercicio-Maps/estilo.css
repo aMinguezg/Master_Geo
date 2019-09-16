@@ -1,0 +1,27 @@
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 40%;
+    grid-template-rows: 20% 20% 20% 20% 20% 20%;
+    grid-template-areas: 
+    'map map map image'
+    'map map map image'
+    'map map map buttons'
+    'map map map buttons'
+    'score score score score';
+}
+
+.map-view{
+    grid-area: map;
+}
+
+.image-view{
+    grid-area: image;
+}
+.buttons-view{
+    grid-area: buttons;
+}
+
+.score-view{
+    grid-area: score;
+}

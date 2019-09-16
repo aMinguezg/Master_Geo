@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>Visualizando capa de tr&aacute;fico</title>
+	<link href="css/default.css" rel="stylesheet" type="text/css" />
+
+  </head>
+  <body>
+		<div>
+			<input onclick="mostrarTrafico();" type=button value="Tr&aacute;fico"/>
+			<input onclick="mostrarTransporte();" type=button value="Transporte p&uacute;blico"/>
+			<input onclick="mostrarCarrilBici();" type=button value="Carriles bici"/> 
+			<input onclick="quitarCapas();" type=button value="Dejar carreteras"/> 
+		</div> 
+		<div id="map_canvas" style="top:10px; height:95%"></div>
+		<script>
+		var map;
+		var capaActiva= null;
+
+		function initMap() {
+		  var manhatan = new google.maps.LatLng(40.754971, -74.004511);
+		  map = new google.maps.Map(document.getElementById('map_canvas'), {
+			zoom: 13,
+			center: manhatan
+		  });		  
+		}
+		
+		function mostrarTrafico() {
+			if (capaActiva)
+				capaActiva.setMap(null);
+			var trafficLayer = new google.maps.TrafficLayer();
+			capaActiva= trafficLayer;
+			trafficLayer.setMap(map);
+		}
+
+		function mostrarTransporte () {
+			if (capaActiva)
+				capaActiva.setMap(null);
+			var publicTransport = new google.maps.TransitLayer();
+			capaActiva= publicTransport;
+			publicTransport.setMap(map);
+		}
+
+		function mostrarCarrilBici () {
+			if (capaActiva)
+				capaActiva.setMap(null);
+			var bikeLayer = new google.maps.BicyclingLayer();
+			capaActiva= bikeLayer;
+			bikeLayer.setMap(map);
+		}
+
+		function quitarCapas () {
+			if (capaActiva)
+				capaActiva.setMap(null);
+			capaActiva= null;
+		}
+
+		</script>
+		<script src="https://maps.googleapis.com/maps/api/js?callback=initMap&key=AIzaSyAaBo7bx5QaWY44Z4In3u8BNLGJxHiiLzs&signed_in=true" async defer>
+		</script>
+  </body>
+</html>

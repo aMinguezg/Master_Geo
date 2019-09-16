@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>Marcadores personalizados, Simbolos - Ejemplo del API JavaScript de Google Maps v3</title>
+    <style>
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      #map {
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+    <script>
+// This example uses SVG path notation to add a vector-based symbol
+// as the icon for a marker. The resulting icon is a star-shaped symbol
+// with a pale yellow fill and a thick yellow border.
+
+function initMap() {
+  var valdesSalas= new google.maps.LatLng(43.354810,-5.851805);
+  var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 13,
+    center: {lat: 43.354810, lng: -5.851805}
+  });
+
+var infoValdesSalas = '<div id="content">'+
+            '<div id="siteNotice">'+
+            '</div>'+
+            '<h1 id="firstHeading" class="firstHeading">Vald&eacute;s Salas</h1>'+
+            '<div id="bodyContent">'+
+            '<p>El edificio <b>Valdés Salas</b>, es la sede de la Escuela de Ingeniería Informática, ' +
+            'donde se imparte el Máster en Ingeniería Web.</p>'+
+            '</div>'+
+            '</div>';
+
+        var infowindow = new google.maps.InfoWindow({
+          content: infoValdesSalas
+        });
+
+        var marker = new google.maps.Marker({
+          position: valdesSalas,
+          map: map,
+          title: 'Valdés Salas'
+        });
+        marker.addListener('click', function() {
+          infowindow.open(map, marker);
+        });
+}
+
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?callback=initMap&key=AIzaSyAaBo7bx5QaWY44Z4In3u8BNLGJxHiiLzs&signed_in=true" async defer>
+    </script>
+
+  </body>
+</html>

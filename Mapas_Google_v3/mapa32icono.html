@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>Marcadores personalizados, iconos raster - Ejemplo del API JavaScript de Google Maps v3</title>
+    <style>
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      #map {
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+    <script>
+
+function initMap() {
+  var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 13,
+    center: {lat: 43.354810, lng: -5.851805}
+  });
+
+  var image= 'beachflag.png';
+  var marker = new google.maps.Marker({
+    position: map.getCenter(),
+    icon: image,
+    map: map
+  });
+}
+
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?callback=initMap&key=AIzaSyAaBo7bx5QaWY44Z4In3u8BNLGJxHiiLzs&signed_in=true" async defer>
+    </script>
+
+  </body>
+</html>

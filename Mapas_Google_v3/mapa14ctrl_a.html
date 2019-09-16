@@ -1,0 +1,71 @@
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <title>Ejemplo API Google Maps v3: Mapa con control personalizado</title>
+    <script async defer
+      src="https://maps.googleapis.com/maps/api/js?callback=initMap">
+    </script>
+    <script>
+	var map;
+	var oviedo = new google.maps.LatLng(43.354810,-5.851805);
+
+	/**
+	* El control inicio añade un control al mapa que permite
+	* llevar al usuario a oviedo que definimos como inicio
+	*/
+
+	function HomeControl(controlDiv, map) {
+		// Establece estilos de la página (CSS) para el marco (DIV)
+		// que contiene el control, el padding permite separarlo del
+		// borde del mapa
+		controlDiv.style.padding = '5px';
+
+		// Establece estilos del borde
+		var goHomeUI = document.createElement('DIV'); 
+		goHomeUI.style.backgroundColor = 'white';
+		goHomeUI.style.borderStyle = 'solid';
+		goHomeUI.style.borderWidth = '2px';
+		goHomeUI.style.cursor = 'pointer';
+		goHomeUI.style.textAlign = 'center';
+		goHomeUI.title = 'Click to set the map to Home';
+		controlDiv.appendChild(goHomeUI);
+
+		// Establece estilos del relleno
+		var goHomeText = document.createElement('DIV');
+		goHomeText.style.fontFamily = 'Arial,sans-serif';
+		goHomeText.style.fontSize = '12px';
+		goHomeText.style.paddingLeft = '4px';
+		goHomeText.style.paddingRight = '4px';
+		goHomeText.innerHTML = '<b>Ir a inicio</b>';
+		goHomeUI.appendChild(goHomeText);
+
+		// Establece el receptor del evento para Inicio
+		// Establece el centro del mapa al valor oviedo
+		google.maps.event.addDomListener(goHomeText, 'click', function() {
+			map.setCenter(oviedo);
+		});
+	}
+
+	function initMap() {
+		var mapDiv = document.getElementById('marco_mapa');
+		var myOptions = {
+			zoom: 12,
+			center: oviedo,
+			mapTypeId: google.maps.MapTypeId.ROADMAP
+		}
+	map = new google.maps.Map(mapDiv, myOptions);
+
+	// Crea un DIV para alojar el control y
+	// llama a HomeControl() pasando este DIV
+	var homeControlDiv = document.createElement('DIV');
+	var homeControl = new HomeControl(homeControlDiv, map);
+
+	homeControlDiv.index = 1;
+	map.controls[google.maps.ControlPosition.TOP_RIGHT].push(homeControlDiv);
+	}
+</script>
+</head>
+<body>
+  <div id="marco_mapa" style="width:100%; height:100%"></div>
+</body>
+</html>

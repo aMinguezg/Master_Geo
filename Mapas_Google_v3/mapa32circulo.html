@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<title>Circulos conc&eacute;ntricos - Ejemplo del API JavaScript de Google Maps v3</title>
+    <style type="text/css">
+      html, body { height: 100%; margin: 0; padding: 0; }
+      #map_frame { height: 100%; }
+    </style>
+    <script async defer
+      src="https://maps.googleapis.com/maps/api/js?callback=initMap&key=AIzaSyAaBo7bx5QaWY44Z4In3u8BNLGJxHiiLzs">
+    </script>
+    <script type="text/javascript">
+	var map;
+	function initMap() {
+		var villablino = new google.maps.LatLng(42.939522,-6.31088);
+		var misOpciones = {
+		  center: villablino,
+		  zoom: 15,
+		  mapTypeId: google.maps.MapTypeId.HYBRID
+		};
+		var map = new google.maps.Map(document.getElementById("map_frame"), misOpciones);
+		
+		var i;
+		for (i = 50; i < 2000; i+= 500)
+		{
+			var circuloOptions = {
+			  strokeColor: '#0000FF',
+			  strokeOpacity: 0.8,
+			  strokeWeight: 2,
+			  fillColor: '#00FF00',
+			  fillOpacity: 0.15,
+			  map: map,
+			  center: villablino,
+			  radius: i
+			};
+			var circulo = new google.maps.Circle(circuloOptions);		
+		}
+		
+	  }
+    </script>
+  </head>
+
+  <body>
+    <div id="map_frame"></div>
+  </body>
+</html>

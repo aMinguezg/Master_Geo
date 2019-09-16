@@ -1,0 +1,76 @@
+<html>
+<head>
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+<title>Ejemplo API Google Maps v3: Rutas</title>
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?callback=initMap">
+</script>
+<script>
+	var directionDisplay;
+	var directionsService = new google.maps.DirectionsService();
+	var map;
+	
+	function initMap() {
+		directionsDisplay = new google.maps.DirectionsRenderer();
+		
+		var latlng = new google.maps.LatLng(43.354810,-5.851805);
+		var misOpciones = {
+			zoom: 14,
+			center: latlng,
+			mapTypeId: google.maps.MapTypeId.ROADMAP
+		};
+		map = new google.maps.Map(document.getElementById("marco_mapa"), misOpciones);
+		directionsDisplay.setMap(map);
+	}
+
+	function calcularRuta() {
+		var start = document.getElementById("start").value;
+		var end = document.getElementById("end").value;
+		var peticion = {
+			origin:start, 
+			destination:end,
+			travelMode: google.maps.DirectionsTravelMode.DRIVING
+			};
+		directionsService.route(peticion, function(response, status) {
+			if (status == google.maps.DirectionsStatus.OK) {
+				directionsDisplay.setDirections(response);
+			}
+		});
+	}
+	
+</script>
+</head>
+<body>
+	<div>
+		<b>Inicio: </b>
+		<select id="start" onchange="calcularRuta();">
+			<option value="Oviedo">Oviedo</option>
+			<option value="Gijon">Gij&oacute;n</option>
+			<option value="Lugo">Lugo</option>
+			<option value="Mieres">Mieres</option>
+			<option value="Madrid">Madrid</option>
+			<option value="Salamanca">Salamanca</option>
+			<option value="Llanes">Llanes</option>
+
+			<option value="Luarca, Valdes">Luarca</option>
+			<option value="Vigo">Vigo</option>
+			<option value="Santander">Santander</option>
+		</select>
+		<b>Fin: </b>
+		<select id="end" onchange="calcularRuta();">
+			<option value="Oviedo">Oviedo</option>
+			<option value="Gijon">Gij&oacute;n</option>
+			<option value="Lugo">Lugo</option>
+			<option value="Mieres">Mieres</option>
+			<option value="Madrid">Madrid</option>
+			<option value="Salamanca">Salamanca</option>
+			<option value="Llanes">Llanes</option>
+
+			<option value="Luarca, Valdes">Luarca</option>
+			<option value="Vigo">Vigo</option>
+			<option value="Santander">Santander</option>
+		</select>
+	</div>
+	<div id="marco_mapa" style="height:90%; top:30px; border: 1px solid black;"></div>
+</body>
+</html>

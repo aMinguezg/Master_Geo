@@ -1,0 +1,7 @@
+/*--------------------------------------
+Hoja de estilos para un mapa básico
+----------------------------------------*/
+
+html { height: 100% }
+body { height: 100%; margin: 0; padding: 0 }
+#marco_mapa { height: 100% }
