@@ -18,11 +18,26 @@
 
 .image-view{
     grid-area: image;
+    text-align: center;
 }
 .buttons-view{
     grid-area: buttons;
+    text-align: center;
 }
 
 .score-view{
     grid-area: score;
+    text-align: center;
+    margin-top: 5%;
+}
+
+.imagen{
+    height: 38vh;
+    width: 48vh;
+}
+
+button{
+    height: 30px;
+    width: 150px;
+    margin-top: 10%;
 }
