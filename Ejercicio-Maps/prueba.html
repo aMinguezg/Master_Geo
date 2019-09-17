@@ -5,19 +5,129 @@
     <title>Juego del mapa</title>
     <link rel="stylesheet" type="text/css" href="estilo.css">
     <script async defer
-    src="https://maps.googleapis.com/maps/api/js?callback=initMap&key=AIzaSyAaBo7bx5QaWY44Z4In3u8BNLGJxHiiLzs">
-    </script>
+        src="https://maps.googleapis.com/maps/api/js?callback=initMap&key=AIzaSyAaBo7bx5QaWY44Z4In3u8BNLGJxHiiLzs&libraries=geometry">
+        </script>
     <script type="text/javascript">
-        var map;
+
+        let marcador = "";
+        let giralda;
+        let giraldaMarker;
+        let respuestas = [];
+        let soluciones = [];
+        let puntuacion = 0;
+        let map;
+        let circuloVerde;
+        let circuloAmarillo;
+        let circuloRojo;
+        let madrid;
+
+        function addMarker(location) {
+            if (marcador == "") {
+                marcador = new google.maps.Marker({
+                    position: location,
+                    map: map
+                });
+            }
+            else {
+                marcador.setMap(null)
+                marcador = new google.maps.Marker({
+                    position: location,
+                    map: map
+                });
+            }
+
+        }
+
+        function confirmar(posicion) {
+            giraldaMarker = new google.maps.Marker({
+                position: posicion,
+                map: map
+            });
+
+            for (let i = 50000; i < 200000; i += 50000) {
+
+                if(i==50000){
+                    let circuloOptions = {
+                    strokeColor: '#39FF33',
+                    strokeOpacity: 0.8,
+                    strokeWeight: 2,
+                    fillColor: '#39FF33',
+                    fillOpacity: 0.4,
+                    map: map,
+                    center: posicion,
+                    radius: i
+                };
+                circuloVerde = new google.maps.Circle(circuloOptions);
+                }
+                else if(i== 100000){
+                    let circuloOptions = {
+                    strokeColor: '#FFFF33',
+                    strokeOpacity: 0.8,
+                    strokeWeight: 2,
+                    fillColor: '#FFFF33',
+                    fillOpacity: 0.2,
+                    map: map,
+                    center: posicion,
+                    radius: i
+                };
+                circuloAmarillo = new google.maps.Circle(circuloOptions);
+                }
+                else{
+                    let circuloOptions = {
+                    strokeColor: '#FF3333',
+                    strokeOpacity: 0.8,
+                    strokeWeight: 2,
+                    fillColor: '#FF3333',
+                    fillOpacity: 0.2,
+                    map: map,
+                    center: posicion,
+                    radius: i
+                };
+                circuloRojo= new google.maps.Circle(circuloOptions);
+                }
+                
+                
+            }
+
+           //alert(google.maps.geometry.spherical.computeDistanceBetween(giralda, madrid));
+
+        }
+
+        function sigFoto() {
+            if (marcador == "") {
+                giraldaMarker.setMap(null);
+                respuestas.push("No contestado");
+            }
+            else {
+                marcador.setMap(null);
+                giraldaMarker.setMap(null);
+                marcador = "";
+                respuestas.push(marcador);
+            }
+
+
+        }
+
         function initMap() {
-            var oviedo_eii = new google.maps.LatLng(43.354810, -5.851805);
-            var misOpciones = {
-                center: oviedo_eii,
-                zoom: 14,
-                mapTypeId: google.maps.MapTypeId.ROADMAP
+            madrid = new google.maps.LatLng(40.4167, -3.70325);
+            let misOpciones = {
+                center: madrid,
+                zoom: 6,
+                mapTypeId: google.maps.MapTypeId.SATELLITE,
+                disableDefaultUI: true
             };
             map = new google.maps.Map(document.getElementById("map-view"), misOpciones);
+
+            giralda = new google.maps.LatLng(37.386206, -5.992552);
+            google.maps.event.addListener(map, 'click', function (event) {
+                addMarker(event.latLng);
+            });
+
+            
         }
+
+
+
     </script>
 </head>
 
@@ -30,12 +140,12 @@
             <img src="giralda.jpg" alt="La Giralda" class="imagen">
         </div>
         <div class="buttons-view">
-            <button>CONFIRMAR</button>
+            <button onclick="confirmar(giralda)">CONFIRMAR</button>
             <br>
-            <button>SIGUIENTE FOTO</button>
+            <button onclick="sigFoto()">SIGUIENTE FOTO</button>
         </div>
         <div class="score-view">
-            <p>PUNTUACIÓN TOTAL: 85 PUNTOS!</p> 
+            <p>PUNTUACIÓN TOTAL: 85 PUNTOS!</p>
         </div>
     </div>
 </body>
