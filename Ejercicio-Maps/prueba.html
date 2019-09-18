@@ -44,6 +44,7 @@
         let circuloRojo;
         let madrid;
         let i = 1;
+        let confirmado = false;
 
 
 
@@ -68,7 +69,9 @@
         }
 
         function confirmar() {
-            if(i == 1){
+
+            if(confirmado == false){
+                if(i == 1){
                 pizjuanMarker = new google.maps.Marker({
                 position: pizjuan,
                 map: map
@@ -235,13 +238,24 @@
                 document.getElementById("puntos").textContent = "PUNTOS OBTENIDOS: " + puntuacion;
                 document.getElementById("puntosTotales").textContent = "PUNTOS TOTALES OBTENIDOS: " + puntuacionFinal;
             }
+            confirmado = true;
 
+            }
+            else{
+                alert("SOLO SE PUEDE CONFIRMAR UNA VEZ")
+            }
+          
 
 
 
         }
 
         function sigFoto() {
+            if(i == 10){
+                alert("EL JUEGO HA TERMINADO, HAS OBTENIDO: " + puntuacionFinal + " PUNTOS!")
+                location.reload();
+            }
+
             if (marcadorMarker == "") {
                 posicionMarker.setMap(null);
                 respuestas.push("No contestado");
@@ -254,6 +268,7 @@
                 document.getElementById("puntosTotales").textContent = "";
                 i += 1;
                 document.getElementById("fotoPrueba").src = "foto" + i + ".jpg";
+                confirmado = false;
             }
             else {
                 marcadorMarker.setMap(null);
@@ -268,6 +283,7 @@
                 document.getElementById("puntosTotales").textContent = "";
                 i += 1;
                 document.getElementById("fotoPrueba").src = "foto" + i + ".jpg";
+                confirmado = false;
             }
 
 

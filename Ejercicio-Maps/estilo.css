@@ -28,7 +28,6 @@
 .score-view{
     grid-area: score;
     text-align: center;
-    margin-top: 5%;
 }
 
 .imagen{
