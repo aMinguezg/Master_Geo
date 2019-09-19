@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding="ISO-8859-1" standalone="no" ?>
+<!DOCTYPE ServiceExceptionReport SYSTEM "http://schemas.opengis.net/wms/1.1.1/exception_1_1_1.dtd">
+<ServiceExceptionReport version="1.1.1">
+<ServiceException code="LayerNotDefined">
+msWMSLoadGetMapParams(): WMS server error. Invalid layer(s) given in the LAYERS parameter. A layer might be disabled for this request. Check wms/ows_enable_request settings.
+msOGCWKT2ProjectionObj(): OGR error. Ingestion of WKT string &#39;init=epsg:25830&#39; failed.
+msOGCWKT2ProjectionObj(): OGR error. Ingestion of WKT string &#39;init=epsg:25830&#39; failed.
+msWMSLoadGetMapParams(): WMS server error. Image size out of range, WIDTH and HEIGHT must be between 1 and 4096 pixels.
+msWMSLoadGetMapParams(): Image handling error. Unsupported output format (image/gif).
+msWMSLoadGetMapParams(): WMS server error. Image size out of range, WIDTH and HEIGHT must be between 1 and 4096 pixels.
+msWMSDispatch(): WMS server error. Incomplete WMS request: VERSION parameter missing
+msWMSLoadGetMapParams(): Image handling error. Unsupported output format (image/formato).
+msSetErrorFile(): General error message. Failed to open MS_ERRORFILE /var/www/logs/crea_capa_siu_suelos_mapserver.log
+msSetErrorFile(): General error message. Failed to open MS_ERRORFILE /var/www/logs/mapserver.log
+msOGCWKT2ProjectionObj(): OGR error. Ingestion of WKT string &#39;init=epsg:25830&#39; failed.
+msOGCWKT2ProjectionObj(): OGR error. Ingestion of WKT string &#39;init=epsg:25830&#39; failed.
+msSetErrorFile(): General error message. Failed to open MS_ERRORFILE /var/www/logs/mapserver.log
+msOGCWKT2ProjectionObj(): OGR error. Ingestion of WKT string &#39;init=epsg:25830&#39; failed.
+msOGCWKT2ProjectionObj(): OGR error. Ingestion of WKT string &#39;init=epsg:25830&#39; failed.
+msSetErrorFile(): General error message. Failed to open MS_ERRORFILE /var/www/logs/crea_capa_siu_suelos_mapserver.log
+msSetErrorFile(): General error message. Failed to open MS_ERRORFILE /var/www/logs/crea_capa_siu_suelos_mapserver.log
+msSetErrorFile(): General error message. Failed to open MS_ERRORFILE /var/www/logs/crea_capa_siu_suelos_mapserver.log
+msSetErrorFile(): General error message. Failed to open MS_ERRORFILE /var/www/logs/crea_capa_siu_suelos_mapserver.log
+msSetErrorFile(): General error message. Failed to open MS_ERRORFILE /var/www/logs/crea_capa_siu_suelos_mapserver.log
+msQueryByRect(): Search returned no results. No matching record(s) found.
+</ServiceException>
+</ServiceExceptionReport>

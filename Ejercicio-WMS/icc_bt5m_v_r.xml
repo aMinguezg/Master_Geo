@@ -1,0 +1,814 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE WMT_MS_Capabilities SYSTEM "http://schemas.opengis.net/wms/1.1.1/WMS_MS_Capabilities.dtd">
+<WMT_MS_Capabilities version="1.1.1">
+	<Service>
+		<Name>WMS</Name>
+		<Title>icc_bt5m_v_r</Title>
+		<Abstract>OGC:WMS</Abstract>
+		<Keywords>
+			<Keyword vocabulary="ISO">infoMapAccessService</Keyword>
+		</Keywords>
+		<OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://galileo.icc.cat/arcgis/services/icc_bt5m_v_r/MapServer/WMSServer"/>
+		<ContactInformation>
+			<ContactPersonPrimary>
+				<ContactPerson>Webmaster</ContactPerson>
+				<ContactOrganization>ICC</ContactOrganization>
+			</ContactPersonPrimary>
+			<ContactPosition>pointOfContact</ContactPosition>
+			<ContactAddress>
+				<AddressType>postal</AddressType>
+				<Address>Parc de Monjtuic s/n</Address>
+				<City>Barcelona</City>
+				<StateOrProvince>Barcelona</StateOrProvince>
+				<PostCode>08038</PostCode>
+				<Country>Spain</Country>
+			</ContactAddress>
+			<ContactVoiceTelephone>+34 935671500</ContactVoiceTelephone>
+			<ContactFacsimileTelephone></ContactFacsimileTelephone>
+			<ContactElectronicMailAddress>webmaster@icc.cat</ContactElectronicMailAddress>
+		</ContactInformation>
+		<Fees>http://www.icc.cat/eng/Home-ICC/Inici/Condicions-d-us</Fees>
+		<AccessConstraints>copyright</AccessConstraints>
+	</Service>
+	<Capability>
+		<Request>
+			<GetCapabilities>
+				<Format>application/vnd.ogc.wms_xml</Format>
+				<DCPType>
+					<HTTP><Get><OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://galileo.icc.cat/arcgis/services/icc_bt5m_v_r/MapServer/WMSServer"/></Get></HTTP>
+				</DCPType>
+			</GetCapabilities>
+			<GetMap>
+				<Format>image/bmp</Format>
+				<Format>image/jpeg</Format>
+				<Format>image/tiff</Format>
+				<Format>image/png</Format>
+				<Format>image/gif</Format>
+				<Format>image/svg+xml</Format>
+				<DCPType>
+					<HTTP><Get><OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://galileo.icc.cat/arcgis/services/icc_bt5m_v_r/MapServer/WMSServer"/></Get></HTTP>
+				</DCPType>
+			</GetMap>
+			<GetFeatureInfo>
+				<Format>application/vnd.ogc.wms_xml</Format>
+				<Format>text/xml</Format>
+				<Format>text/html</Format>
+				<Format>text/plain</Format>
+				<DCPType>
+					<HTTP><Get><OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://galileo.icc.cat/arcgis/services/icc_bt5m_v_r/MapServer/WMSServer"/></Get></HTTP>
+				</DCPType>
+			</GetFeatureInfo>
+		</Request>
+		<Exception>
+			<Format>application/vnd.ogc.se_xml</Format>
+			<Format>application/vnd.ogc.se_inimage</Format>
+			<Format>application/vnd.ogc.se_blank</Format>
+		</Exception>
+		<Layer>
+			<Title>Layers</Title>
+			<SRS>EPSG:4326</SRS>
+			<SRS>EPSG:4230</SRS>
+			<SRS>EPSG:4258</SRS>
+			<SRS>EPSG:32631</SRS>
+			<SRS>EPSG:23031</SRS>
+			<SRS>EPSG:25831</SRS><SRS>EPSG:3857</SRS>
+			<LatLonBoundingBox minx="0.108624" miny="40.477710" maxx="3.378579" maxy="42.900140"/>
+			<BoundingBox SRS="EPSG:4326" minx="0.108624" miny="40.477710" maxx="3.378579" maxy="42.900140"/>
+			<BoundingBox SRS="EPSG:4230" minx="0.109826" miny="40.478870" maxx="3.379704" maxy="42.901212"/>
+			<BoundingBox SRS="EPSG:4258" minx="0.108624" miny="40.477710" maxx="3.378579" maxy="42.900140"/>
+			<BoundingBox SRS="EPSG:32631" minx="254904.96" miny="4484796.89" maxx="530907.30" maxy="4749795.10"/>
+			<BoundingBox SRS="EPSG:23031" minx="257000" miny="4485000" maxx="540000" maxy="4756000"/>
+			<BoundingBox SRS="EPSG:3857" maxx="387921.651632" maxy="5302989.995799" minx="4554.402748" miny="4936725.023919"/><BoundingBox SRS="EPSG:25831" minx="254904.96" miny="4484796.89" maxx="530907.30" maxy="4749795.10"/>
+			<Layer queryable="1">
+				<Name>1</Name>
+				<Title>Rocam</Title>
+				<Abstract>Rocam</Abstract>
+				<SRS>EPSG:4326</SRS>
+				<SRS>EPSG:4230</SRS>
+				<SRS>EPSG:4258</SRS>
+				<SRS>EPSG:32631</SRS>
+				<SRS>EPSG:23031</SRS>
+				<SRS>EPSG:25831</SRS><SRS>EPSG:3857</SRS>
+				<LatLonBoundingBox minx="0.108624" miny="40.477710" maxx="3.378579" maxy="42.900140"/>
+				<BoundingBox SRS="EPSG:4326" minx="0.108624" miny="40.477710" maxx="3.378579" maxy="42.900140"/>
+				<BoundingBox SRS="EPSG:4230" minx="0.109826" miny="40.478870" maxx="3.379704" maxy="42.901212"/>
+				<BoundingBox SRS="EPSG:4258" minx="0.108624" miny="40.477710" maxx="3.378579" maxy="42.900140"/>
+				<BoundingBox SRS="EPSG:32631" minx="254904.96" miny="4484796.89" maxx="530907.30" maxy="4749795.10"/>
+				<BoundingBox SRS="EPSG:23031" minx="257000" miny="4485000" maxx="540000" maxy="4756000"/>
+				<BoundingBox SRS="EPSG:3857" maxx="387921.651632" maxy="5302989.995799" minx="4554.402748" miny="4936725.023919"/><BoundingBox SRS="EPSG:25831" minx="254904.96" miny="4484796.89" maxx="530907.30" maxy="4749795.10"/>
+				<Style>
+					<Name>default</Name>
+					<Title>Rocam</Title>
+					<LegendURL width="100" height="50">
+						<Format>image/png</Format>
+						<OnlineResource xlink:href="http://galileo.icc.cat/arcgis/server/arcgisoutput/icc_bt5m_v_r_MapServer/wms/default1.png" xlink:type="simple" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+					</LegendURL>
+				</Style>
+				<ScaleHint min="0.0" max="6.138000"></ScaleHint>
+			</Layer>
+			<Layer queryable="1">
+				<Name>2</Name>
+				<Title>Bosc</Title>
+				<Abstract>Bosc</Abstract>
+				<SRS>EPSG:4326</SRS>
+				<SRS>EPSG:4230</SRS>
+				<SRS>EPSG:4258</SRS>
+				<SRS>EPSG:32631</SRS>
+				<SRS>EPSG:23031</SRS>
+				<SRS>EPSG:25831</SRS><SRS>EPSG:3857</SRS>
+				<LatLonBoundingBox minx="0.108624" miny="40.477710" maxx="3.378579" maxy="42.900140"/>
+				<BoundingBox SRS="EPSG:4326" minx="0.108624" miny="40.477710" maxx="3.378579" maxy="42.900140"/>
+				<BoundingBox SRS="EPSG:4230" minx="0.109826" miny="40.478870" maxx="3.379704" maxy="42.901212"/>
+				<BoundingBox SRS="EPSG:4258" minx="0.108624" miny="40.477710" maxx="3.378579" maxy="42.900140"/>
+				<BoundingBox SRS="EPSG:32631" minx="254904.96" miny="4484796.89" maxx="530907.30" maxy="4749795.10"/>
+				<BoundingBox SRS="EPSG:23031" minx="257000" miny="4485000" maxx="540000" maxy="4756000"/>
+				<BoundingBox SRS="EPSG:3857" maxx="387921.651632" maxy="5302989.995799" minx="4554.402748" miny="4936725.023919"/><BoundingBox SRS="EPSG:25831" minx="254904.96" miny="4484796.89" maxx="530907.30" maxy="4749795.10"/>
+				<Style>
+					<Name>default</Name>
+					<Title>Bosc</Title>
+					<LegendURL width="100" height="59">
+						<Format>image/png</Format>
+						<OnlineResource xlink:href="http://galileo.icc.cat/arcgis/server/arcgisoutput/icc_bt5m_v_r_MapServer/wms/default2.png" xlink:type="simple" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+					</LegendURL>
+				</Style>
+				<ScaleHint min="0.0" max="6.138000"></ScaleHint>
+			</Layer>
+			<Layer queryable="1">
+				<Name>3</Name>
+				<Title>Agrupació d'arbres</Title>
+				<Abstract>Agrupació d'arbres</Abstract>
+				<SRS>EPSG:4326</SRS>
+				<SRS>EPSG:4230</SRS>
+				<SRS>EPSG:4258</SRS>
+				<SRS>EPSG:32631</SRS>
+				<SRS>EPSG:23031</SRS>
+				<SRS>EPSG:25831</SRS><SRS>EPSG:3857</SRS>
+				<LatLonBoundingBox minx="0.108624" miny="40.477710" maxx="3.378579" maxy="42.900140"/>
+				<BoundingBox SRS="EPSG:4326" minx="0.108624" miny="40.477710" maxx="3.378579" maxy="42.900140"/>
+				<BoundingBox SRS="EPSG:4230" minx="0.109826" miny="40.478870" maxx="3.379704" maxy="42.901212"/>
+				<BoundingBox SRS="EPSG:4258" minx="0.108624" miny="40.477710" maxx="3.378579" maxy="42.900140"/>
+				<BoundingBox SRS="EPSG:32631" minx="254904.96" miny="4484796.89" maxx="530907.30" maxy="4749795.10"/>
+				<BoundingBox SRS="EPSG:23031" minx="257000" miny="4485000" maxx="540000" maxy="4756000"/>
+				<BoundingBox SRS="EPSG:3857" maxx="387921.651632" maxy="5302989.995799" minx="4554.402748" miny="4936725.023919"/><BoundingBox SRS="EPSG:25831" minx="254904.96" miny="4484796.89" maxx="530907.30" maxy="4749795.10"/>
+				<Style>
+					<Name>default</Name>
+					<Title>Agrupació d'arbres</Title>
+					<LegendURL width="100" height="27">
+						<Format>image/png</Format>
+						<OnlineResource xlink:href="http://galileo.icc.cat/arcgis/server/arcgisoutput/icc_bt5m_v_r_MapServer/wms/default3.png" xlink:type="simple" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+					</LegendURL>
+				</Style>
+				<ScaleHint min="0.0" max="6.138000"></ScaleHint>
+			</Layer>
+			<Layer queryable="1">
+				<Name>4</Name>
+				<Title>Rambla inundable</Title>
+				<Abstract>Rambla inundable</Abstract>
+				<SRS>EPSG:4326</SRS>
+				<SRS>EPSG:4230</SRS>
+				<SRS>EPSG:4258</SRS>
+				<SRS>EPSG:32631</SRS>
+				<SRS>EPSG:23031</SRS>
+				<SRS>EPSG:25831</SRS><SRS>EPSG:3857</SRS>
+				<LatLonBoundingBox minx="0.108624" miny="40.477710" maxx="3.378579" maxy="42.900140"/>
+				<BoundingBox SRS="EPSG:4326" minx="0.108624" miny="40.477710" maxx="3.378579" maxy="42.900140"/>
+				<BoundingBox SRS="EPSG:4230" minx="0.109826" miny="40.478870" maxx="3.379704" maxy="42.901212"/>
+				<BoundingBox SRS="EPSG:4258" minx="0.108624" miny="40.477710" maxx="3.378579" maxy="42.900140"/>
+				<BoundingBox SRS="EPSG:32631" minx="254904.96" miny="4484796.89" maxx="530907.30" maxy="4749795.10"/>
+				<BoundingBox SRS="EPSG:23031" minx="257000" miny="4485000" maxx="540000" maxy="4756000"/>
+				<BoundingBox SRS="EPSG:3857" maxx="387921.651632" maxy="5302989.995799" minx="4554.402748" miny="4936725.023919"/><BoundingBox SRS="EPSG:25831" minx="254904.96" miny="4484796.89" maxx="530907.30" maxy="4749795.10"/>
+				<Style>
+					<Name>default</Name>
+					<Title>Rambla inundable</Title>
+					<LegendURL width="100" height="42">
+						<Format>image/png</Format>
+						<OnlineResource xlink:href="http://galileo.icc.cat/arcgis/server/arcgisoutput/icc_bt5m_v_r_MapServer/wms/default4.png" xlink:type="simple" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+					</LegendURL>
+				</Style>
+				<ScaleHint min="0.0" max="6.138000"></ScaleHint>
+			</Layer>
+			<Layer queryable="1">
+				<Name>5</Name>
+				<Title>Zona d'extracció</Title>
+				<Abstract>Zona d'extracció</Abstract>
+				<SRS>EPSG:4326</SRS>
+				<SRS>EPSG:4230</SRS>
+				<SRS>EPSG:4258</SRS>
+				<SRS>EPSG:32631</SRS>
+				<SRS>EPSG:23031</SRS>
+				<SRS>EPSG:25831</SRS><SRS>EPSG:3857</SRS>
+				<LatLonBoundingBox minx="0.108624" miny="40.477710" maxx="3.378579" maxy="42.900140"/>
+				<BoundingBox SRS="EPSG:4326" minx="0.108624" miny="40.477710" maxx="3.378579" maxy="42.900140"/>
+				<BoundingBox SRS="EPSG:4230" minx="0.109826" miny="40.478870" maxx="3.379704" maxy="42.901212"/>
+				<BoundingBox SRS="EPSG:4258" minx="0.108624" miny="40.477710" maxx="3.378579" maxy="42.900140"/>
+				<BoundingBox SRS="EPSG:32631" minx="254904.96" miny="4484796.89" maxx="530907.30" maxy="4749795.10"/>
+				<BoundingBox SRS="EPSG:23031" minx="257000" miny="4485000" maxx="540000" maxy="4756000"/>
+				<BoundingBox SRS="EPSG:3857" maxx="387921.651632" maxy="5302989.995799" minx="4554.402748" miny="4936725.023919"/><BoundingBox SRS="EPSG:25831" minx="254904.96" miny="4484796.89" maxx="530907.30" maxy="4749795.10"/>
+				<Style>
+					<Name>default</Name>
+					<Title>Zona d'extracció</Title>
+					<LegendURL width="100" height="29">
+						<Format>image/png</Format>
+						<OnlineResource xlink:href="http://galileo.icc.cat/arcgis/server/arcgisoutput/icc_bt5m_v_r_MapServer/wms/default5.png" xlink:type="simple" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+					</LegendURL>
+				</Style>
+				<ScaleHint min="0.0" max="6.138000"></ScaleHint>
+			</Layer>
+			<Layer queryable="1">
+				<Name>6</Name>
+				<Title>Abocador</Title>
+				<Abstract>Abocador</Abstract>
+				<SRS>EPSG:4326</SRS>
+				<SRS>EPSG:4230</SRS>
+				<SRS>EPSG:4258</SRS>
+				<SRS>EPSG:32631</SRS>
+				<SRS>EPSG:23031</SRS>
+				<SRS>EPSG:25831</SRS><SRS>EPSG:3857</SRS>
+				<LatLonBoundingBox minx="0.108624" miny="40.477710" maxx="3.378579" maxy="42.900140"/>
+				<BoundingBox SRS="EPSG:4326" minx="0.108624" miny="40.477710" maxx="3.378579" maxy="42.900140"/>
+				<BoundingBox SRS="EPSG:4230" minx="0.109826" miny="40.478870" maxx="3.379704" maxy="42.901212"/>
+				<BoundingBox SRS="EPSG:4258" minx="0.108624" miny="40.477710" maxx="3.378579" maxy="42.900140"/>
+				<BoundingBox SRS="EPSG:32631" minx="254904.96" miny="4484796.89" maxx="530907.30" maxy="4749795.10"/>
+				<BoundingBox SRS="EPSG:23031" minx="257000" miny="4485000" maxx="540000" maxy="4756000"/>
+				<BoundingBox SRS="EPSG:3857" maxx="387921.651632" maxy="5302989.995799" minx="4554.402748" miny="4936725.023919"/><BoundingBox SRS="EPSG:25831" minx="254904.96" miny="4484796.89" maxx="530907.30" maxy="4749795.10"/>
+				<Style>
+					<Name>default</Name>
+					<Title>Abocador</Title>
+					<LegendURL width="100" height="42">
+						<Format>image/png</Format>
+						<OnlineResource xlink:href="http://galileo.icc.cat/arcgis/server/arcgisoutput/icc_bt5m_v_r_MapServer/wms/default6.png" xlink:type="simple" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+					</LegendURL>
+				</Style>
+				<ScaleHint min="0.0" max="6.138000"></ScaleHint>
+			</Layer>
+			<Layer queryable="1">
+				<Name>7</Name>
+				<Title>Corbes de nivell</Title>
+				<Abstract>Corbes de nivell</Abstract>
+				<SRS>EPSG:4326</SRS>
+				<SRS>EPSG:4230</SRS>
+				<SRS>EPSG:4258</SRS>
+				<SRS>EPSG:32631</SRS>
+				<SRS>EPSG:23031</SRS>
+				<SRS>EPSG:25831</SRS><SRS>EPSG:3857</SRS>
+				<LatLonBoundingBox minx="0.108624" miny="40.477710" maxx="3.378579" maxy="42.900140"/>
+				<BoundingBox SRS="EPSG:4326" minx="0.108624" miny="40.477710" maxx="3.378579" maxy="42.900140"/>
+				<BoundingBox SRS="EPSG:4230" minx="0.109826" miny="40.478870" maxx="3.379704" maxy="42.901212"/>
+				<BoundingBox SRS="EPSG:4258" minx="0.108624" miny="40.477710" maxx="3.378579" maxy="42.900140"/>
+				<BoundingBox SRS="EPSG:32631" minx="254904.96" miny="4484796.89" maxx="530907.30" maxy="4749795.10"/>
+				<BoundingBox SRS="EPSG:23031" minx="257000" miny="4485000" maxx="540000" maxy="4756000"/>
+				<BoundingBox SRS="EPSG:3857" maxx="387921.651632" maxy="5302989.995799" minx="4554.402748" miny="4936725.023919"/><BoundingBox SRS="EPSG:25831" minx="254904.96" miny="4484796.89" maxx="530907.30" maxy="4749795.10"/>
+				<Style>
+					<Name>default</Name>
+					<Title>Corbes de nivell</Title>
+					<LegendURL width="100" height="236">
+						<Format>image/png</Format>
+						<OnlineResource xlink:href="http://galileo.icc.cat/arcgis/server/arcgisoutput/icc_bt5m_v_r_MapServer/wms/default7.png" xlink:type="simple" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+					</LegendURL>
+				</Style>
+				<ScaleHint min="0.0" max="2.970000"></ScaleHint>
+			</Layer>
+			<Layer queryable="1">
+				<Name>8</Name>
+				<Title>Mar detallat</Title>
+				<Abstract>Mar detallat</Abstract>
+				<SRS>EPSG:4326</SRS>
+				<SRS>EPSG:4230</SRS>
+				<SRS>EPSG:4258</SRS>
+				<SRS>EPSG:32631</SRS>
+				<SRS>EPSG:23031</SRS>
+				<SRS>EPSG:25831</SRS><SRS>EPSG:3857</SRS>
+				<LatLonBoundingBox minx="0.108624" miny="40.477710" maxx="3.378579" maxy="42.900140"/>
+				<BoundingBox SRS="EPSG:4326" minx="0.108624" miny="40.477710" maxx="3.378579" maxy="42.900140"/>
+				<BoundingBox SRS="EPSG:4230" minx="0.109826" miny="40.478870" maxx="3.379704" maxy="42.901212"/>
+				<BoundingBox SRS="EPSG:4258" minx="0.108624" miny="40.477710" maxx="3.378579" maxy="42.900140"/>
+				<BoundingBox SRS="EPSG:32631" minx="254904.96" miny="4484796.89" maxx="530907.30" maxy="4749795.10"/>
+				<BoundingBox SRS="EPSG:23031" minx="257000" miny="4485000" maxx="540000" maxy="4756000"/>
+				<BoundingBox SRS="EPSG:3857" maxx="387921.651632" maxy="5302989.995799" minx="4554.402748" miny="4936725.023919"/><BoundingBox SRS="EPSG:25831" minx="254904.96" miny="4484796.89" maxx="530907.30" maxy="4749795.10"/>
+				<Style>
+					<Name>default</Name>
+					<Title>Mar detallat</Title>
+					<LegendURL width="100" height="37">
+						<Format>image/png</Format>
+						<OnlineResource xlink:href="http://galileo.icc.cat/arcgis/server/arcgisoutput/icc_bt5m_v_r_MapServer/wms/default8.png" xlink:type="simple" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+					</LegendURL>
+				</Style>
+				<ScaleHint min="0.0" max="6.138000"></ScaleHint>
+			</Layer>
+			<Layer queryable="1">
+				<Name>9</Name>
+				<Title>Espigó</Title>
+				<Abstract>Espigó</Abstract>
+				<SRS>EPSG:4326</SRS>
+				<SRS>EPSG:4230</SRS>
+				<SRS>EPSG:4258</SRS>
+				<SRS>EPSG:32631</SRS>
+				<SRS>EPSG:23031</SRS>
+				<SRS>EPSG:25831</SRS><SRS>EPSG:3857</SRS>
+				<LatLonBoundingBox minx="0.108624" miny="40.477710" maxx="3.378579" maxy="42.900140"/>
+				<BoundingBox SRS="EPSG:4326" minx="0.108624" miny="40.477710" maxx="3.378579" maxy="42.900140"/>
+				<BoundingBox SRS="EPSG:4230" minx="0.109826" miny="40.478870" maxx="3.379704" maxy="42.901212"/>
+				<BoundingBox SRS="EPSG:4258" minx="0.108624" miny="40.477710" maxx="3.378579" maxy="42.900140"/>
+				<BoundingBox SRS="EPSG:32631" minx="254904.96" miny="4484796.89" maxx="530907.30" maxy="4749795.10"/>
+				<BoundingBox SRS="EPSG:23031" minx="257000" miny="4485000" maxx="540000" maxy="4756000"/>
+				<BoundingBox SRS="EPSG:3857" maxx="387921.651632" maxy="5302989.995799" minx="4554.402748" miny="4936725.023919"/><BoundingBox SRS="EPSG:25831" minx="254904.96" miny="4484796.89" maxx="530907.30" maxy="4749795.10"/>
+				<Style>
+					<Name>default</Name>
+					<Title>Espigó</Title>
+					<LegendURL width="100" height="51">
+						<Format>image/png</Format>
+						<OnlineResource xlink:href="http://galileo.icc.cat/arcgis/server/arcgisoutput/icc_bt5m_v_r_MapServer/wms/default9.png" xlink:type="simple" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+					</LegendURL>
+				</Style>
+				<ScaleHint min="0.0" max="6.138000"></ScaleHint>
+			</Layer>
+			<Layer queryable="1">
+				<Name>10</Name>
+				<Title>Illa urbana</Title>
+				<Abstract>Illa urbana</Abstract>
+				<SRS>EPSG:4326</SRS>
+				<SRS>EPSG:4230</SRS>
+				<SRS>EPSG:4258</SRS>
+				<SRS>EPSG:32631</SRS>
+				<SRS>EPSG:23031</SRS>
+				<SRS>EPSG:25831</SRS><SRS>EPSG:3857</SRS>
+				<LatLonBoundingBox minx="0.108624" miny="40.477710" maxx="3.378579" maxy="42.900140"/>
+				<BoundingBox SRS="EPSG:4326" minx="0.108624" miny="40.477710" maxx="3.378579" maxy="42.900140"/>
+				<BoundingBox SRS="EPSG:4230" minx="0.109826" miny="40.478870" maxx="3.379704" maxy="42.901212"/>
+				<BoundingBox SRS="EPSG:4258" minx="0.108624" miny="40.477710" maxx="3.378579" maxy="42.900140"/>
+				<BoundingBox SRS="EPSG:32631" minx="254904.96" miny="4484796.89" maxx="530907.30" maxy="4749795.10"/>
+				<BoundingBox SRS="EPSG:23031" minx="257000" miny="4485000" maxx="540000" maxy="4756000"/>
+				<BoundingBox SRS="EPSG:3857" maxx="387921.651632" maxy="5302989.995799" minx="4554.402748" miny="4936725.023919"/><BoundingBox SRS="EPSG:25831" minx="254904.96" miny="4484796.89" maxx="530907.30" maxy="4749795.10"/>
+				<Style>
+					<Name>default</Name>
+					<Title>Illa urbana</Title>
+					<LegendURL width="100" height="39">
+						<Format>image/png</Format>
+						<OnlineResource xlink:href="http://galileo.icc.cat/arcgis/server/arcgisoutput/icc_bt5m_v_r_MapServer/wms/default10.png" xlink:type="simple" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+					</LegendURL>
+				</Style>
+				<ScaleHint min="0.0" max="6.138000"></ScaleHint>
+			</Layer>
+			<Layer queryable="1">
+				<Name>11</Name>
+				<Title>Presa</Title>
+				<Abstract>Presa</Abstract>
+				<SRS>EPSG:4326</SRS>
+				<SRS>EPSG:4230</SRS>
+				<SRS>EPSG:4258</SRS>
+				<SRS>EPSG:32631</SRS>
+				<SRS>EPSG:23031</SRS>
+				<SRS>EPSG:25831</SRS><SRS>EPSG:3857</SRS>
+				<LatLonBoundingBox minx="0.108624" miny="40.477710" maxx="3.378579" maxy="42.900140"/>
+				<BoundingBox SRS="EPSG:4326" minx="0.108624" miny="40.477710" maxx="3.378579" maxy="42.900140"/>
+				<BoundingBox SRS="EPSG:4230" minx="0.109826" miny="40.478870" maxx="3.379704" maxy="42.901212"/>
+				<BoundingBox SRS="EPSG:4258" minx="0.108624" miny="40.477710" maxx="3.378579" maxy="42.900140"/>
+				<BoundingBox SRS="EPSG:32631" minx="254904.96" miny="4484796.89" maxx="530907.30" maxy="4749795.10"/>
+				<BoundingBox SRS="EPSG:23031" minx="257000" miny="4485000" maxx="540000" maxy="4756000"/>
+				<BoundingBox SRS="EPSG:3857" maxx="387921.651632" maxy="5302989.995799" minx="4554.402748" miny="4936725.023919"/><BoundingBox SRS="EPSG:25831" minx="254904.96" miny="4484796.89" maxx="530907.30" maxy="4749795.10"/>
+				<Style>
+					<Name>default</Name>
+					<Title>Presa</Title>
+					<LegendURL width="100" height="55">
+						<Format>image/png</Format>
+						<OnlineResource xlink:href="http://galileo.icc.cat/arcgis/server/arcgisoutput/icc_bt5m_v_r_MapServer/wms/default11.png" xlink:type="simple" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+					</LegendURL>
+				</Style>
+				<ScaleHint min="0.0" max="6.138000"></ScaleHint>
+			</Layer>
+			<Layer queryable="1">
+				<Name>12</Name>
+				<Title>Peatge</Title>
+				<Abstract>Peatge</Abstract>
+				<SRS>EPSG:4326</SRS>
+				<SRS>EPSG:4230</SRS>
+				<SRS>EPSG:4258</SRS>
+				<SRS>EPSG:32631</SRS>
+				<SRS>EPSG:23031</SRS>
+				<SRS>EPSG:25831</SRS><SRS>EPSG:3857</SRS>
+				<LatLonBoundingBox minx="0.108624" miny="40.477710" maxx="3.378579" maxy="42.900140"/>
+				<BoundingBox SRS="EPSG:4326" minx="0.108624" miny="40.477710" maxx="3.378579" maxy="42.900140"/>
+				<BoundingBox SRS="EPSG:4230" minx="0.109826" miny="40.478870" maxx="3.379704" maxy="42.901212"/>
+				<BoundingBox SRS="EPSG:4258" minx="0.108624" miny="40.477710" maxx="3.378579" maxy="42.900140"/>
+				<BoundingBox SRS="EPSG:32631" minx="254904.96" miny="4484796.89" maxx="530907.30" maxy="4749795.10"/>
+				<BoundingBox SRS="EPSG:23031" minx="257000" miny="4485000" maxx="540000" maxy="4756000"/>
+				<BoundingBox SRS="EPSG:3857" maxx="387921.651632" maxy="5302989.995799" minx="4554.402748" miny="4936725.023919"/><BoundingBox SRS="EPSG:25831" minx="254904.96" miny="4484796.89" maxx="530907.30" maxy="4749795.10"/>
+				<Style>
+					<Name>default</Name>
+					<Title>Peatge</Title>
+					<LegendURL width="100" height="50">
+						<Format>image/png</Format>
+						<OnlineResource xlink:href="http://galileo.icc.cat/arcgis/server/arcgisoutput/icc_bt5m_v_r_MapServer/wms/default12.png" xlink:type="simple" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+					</LegendURL>
+				</Style>
+				<ScaleHint min="0.0" max="6.138000"></ScaleHint>
+			</Layer>
+			<Layer queryable="1">
+				<Name>13</Name>
+				<Title>Edifici</Title>
+				<Abstract>Edifici</Abstract>
+				<SRS>EPSG:4326</SRS>
+				<SRS>EPSG:4230</SRS>
+				<SRS>EPSG:4258</SRS>
+				<SRS>EPSG:32631</SRS>
+				<SRS>EPSG:23031</SRS>
+				<SRS>EPSG:25831</SRS><SRS>EPSG:3857</SRS>
+				<LatLonBoundingBox minx="0.108624" miny="40.477710" maxx="3.378579" maxy="42.900140"/>
+				<BoundingBox SRS="EPSG:4326" minx="0.108624" miny="40.477710" maxx="3.378579" maxy="42.900140"/>
+				<BoundingBox SRS="EPSG:4230" minx="0.109826" miny="40.478870" maxx="3.379704" maxy="42.901212"/>
+				<BoundingBox SRS="EPSG:4258" minx="0.108624" miny="40.477710" maxx="3.378579" maxy="42.900140"/>
+				<BoundingBox SRS="EPSG:32631" minx="254904.96" miny="4484796.89" maxx="530907.30" maxy="4749795.10"/>
+				<BoundingBox SRS="EPSG:23031" minx="257000" miny="4485000" maxx="540000" maxy="4756000"/>
+				<BoundingBox SRS="EPSG:3857" maxx="387921.651632" maxy="5302989.995799" minx="4554.402748" miny="4936725.023919"/><BoundingBox SRS="EPSG:25831" minx="254904.96" miny="4484796.89" maxx="530907.30" maxy="4749795.10"/>
+				<Style>
+					<Name>default</Name>
+					<Title>Edifici</Title>
+					<LegendURL width="100" height="68">
+						<Format>image/png</Format>
+						<OnlineResource xlink:href="http://galileo.icc.cat/arcgis/server/arcgisoutput/icc_bt5m_v_r_MapServer/wms/default13.png" xlink:type="simple" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+					</LegendURL>
+				</Style>
+				<ScaleHint min="0.0" max="6.138000"></ScaleHint>
+			</Layer>
+			<Layer queryable="1">
+				<Name>14</Name>
+				<Title>Construcció</Title>
+				<Abstract>Construcció</Abstract>
+				<SRS>EPSG:4326</SRS>
+				<SRS>EPSG:4230</SRS>
+				<SRS>EPSG:4258</SRS>
+				<SRS>EPSG:32631</SRS>
+				<SRS>EPSG:23031</SRS>
+				<SRS>EPSG:25831</SRS><SRS>EPSG:3857</SRS>
+				<LatLonBoundingBox minx="0.108624" miny="40.477710" maxx="3.378579" maxy="42.900140"/>
+				<BoundingBox SRS="EPSG:4326" minx="0.108624" miny="40.477710" maxx="3.378579" maxy="42.900140"/>
+				<BoundingBox SRS="EPSG:4230" minx="0.109826" miny="40.478870" maxx="3.379704" maxy="42.901212"/>
+				<BoundingBox SRS="EPSG:4258" minx="0.108624" miny="40.477710" maxx="3.378579" maxy="42.900140"/>
+				<BoundingBox SRS="EPSG:32631" minx="254904.96" miny="4484796.89" maxx="530907.30" maxy="4749795.10"/>
+				<BoundingBox SRS="EPSG:23031" minx="257000" miny="4485000" maxx="540000" maxy="4756000"/>
+				<BoundingBox SRS="EPSG:3857" maxx="387921.651632" maxy="5302989.995799" minx="4554.402748" miny="4936725.023919"/><BoundingBox SRS="EPSG:25831" minx="254904.96" miny="4484796.89" maxx="530907.30" maxy="4749795.10"/>
+				<Style>
+					<Name>default</Name>
+					<Title>Construcció</Title>
+					<LegendURL width="100" height="37">
+						<Format>image/png</Format>
+						<OnlineResource xlink:href="http://galileo.icc.cat/arcgis/server/arcgisoutput/icc_bt5m_v_r_MapServer/wms/default14.png" xlink:type="simple" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+					</LegendURL>
+				</Style>
+				<ScaleHint min="0.0" max="6.138000"></ScaleHint>
+			</Layer>
+			<Layer queryable="1">
+				<Name>15</Name>
+				<Title>Parterre</Title>
+				<Abstract>Parterre</Abstract>
+				<SRS>EPSG:4326</SRS>
+				<SRS>EPSG:4230</SRS>
+				<SRS>EPSG:4258</SRS>
+				<SRS>EPSG:32631</SRS>
+				<SRS>EPSG:23031</SRS>
+				<SRS>EPSG:25831</SRS><SRS>EPSG:3857</SRS>
+				<LatLonBoundingBox minx="0.108624" miny="40.477710" maxx="3.378579" maxy="42.900140"/>
+				<BoundingBox SRS="EPSG:4326" minx="0.108624" miny="40.477710" maxx="3.378579" maxy="42.900140"/>
+				<BoundingBox SRS="EPSG:4230" minx="0.109826" miny="40.478870" maxx="3.379704" maxy="42.901212"/>
+				<BoundingBox SRS="EPSG:4258" minx="0.108624" miny="40.477710" maxx="3.378579" maxy="42.900140"/>
+				<BoundingBox SRS="EPSG:32631" minx="254904.96" miny="4484796.89" maxx="530907.30" maxy="4749795.10"/>
+				<BoundingBox SRS="EPSG:23031" minx="257000" miny="4485000" maxx="540000" maxy="4756000"/>
+				<BoundingBox SRS="EPSG:3857" maxx="387921.651632" maxy="5302989.995799" minx="4554.402748" miny="4936725.023919"/><BoundingBox SRS="EPSG:25831" minx="254904.96" miny="4484796.89" maxx="530907.30" maxy="4749795.10"/>
+				<Style>
+					<Name>default</Name>
+					<Title>Parterre</Title>
+					<LegendURL width="100" height="47">
+						<Format>image/png</Format>
+						<OnlineResource xlink:href="http://galileo.icc.cat/arcgis/server/arcgisoutput/icc_bt5m_v_r_MapServer/wms/default15.png" xlink:type="simple" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+					</LegendURL>
+				</Style>
+				<ScaleHint min="0.0" max="6.138000"></ScaleHint>
+			</Layer>
+			<Layer queryable="1">
+				<Name>16</Name>
+				<Title>Hivernacle</Title>
+				<Abstract>Hivernacle</Abstract>
+				<SRS>EPSG:4326</SRS>
+				<SRS>EPSG:4230</SRS>
+				<SRS>EPSG:4258</SRS>
+				<SRS>EPSG:32631</SRS>
+				<SRS>EPSG:23031</SRS>
+				<SRS>EPSG:25831</SRS><SRS>EPSG:3857</SRS>
+				<LatLonBoundingBox minx="0.108624" miny="40.477710" maxx="3.378579" maxy="42.900140"/>
+				<BoundingBox SRS="EPSG:4326" minx="0.108624" miny="40.477710" maxx="3.378579" maxy="42.900140"/>
+				<BoundingBox SRS="EPSG:4230" minx="0.109826" miny="40.478870" maxx="3.379704" maxy="42.901212"/>
+				<BoundingBox SRS="EPSG:4258" minx="0.108624" miny="40.477710" maxx="3.378579" maxy="42.900140"/>
+				<BoundingBox SRS="EPSG:32631" minx="254904.96" miny="4484796.89" maxx="530907.30" maxy="4749795.10"/>
+				<BoundingBox SRS="EPSG:23031" minx="257000" miny="4485000" maxx="540000" maxy="4756000"/>
+				<BoundingBox SRS="EPSG:3857" maxx="387921.651632" maxy="5302989.995799" minx="4554.402748" miny="4936725.023919"/><BoundingBox SRS="EPSG:25831" minx="254904.96" miny="4484796.89" maxx="530907.30" maxy="4749795.10"/>
+				<Style>
+					<Name>default</Name>
+					<Title>Hivernacle</Title>
+					<LegendURL width="100" height="40">
+						<Format>image/png</Format>
+						<OnlineResource xlink:href="http://galileo.icc.cat/arcgis/server/arcgisoutput/icc_bt5m_v_r_MapServer/wms/default16.png" xlink:type="simple" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+					</LegendURL>
+				</Style>
+				<ScaleHint min="0.0" max="6.138000"></ScaleHint>
+			</Layer>
+			<Layer queryable="1">
+				<Name>17</Name>
+				<Title>Camp d'esports</Title>
+				<Abstract>Camp d'esports</Abstract>
+				<SRS>EPSG:4326</SRS>
+				<SRS>EPSG:4230</SRS>
+				<SRS>EPSG:4258</SRS>
+				<SRS>EPSG:32631</SRS>
+				<SRS>EPSG:23031</SRS>
+				<SRS>EPSG:25831</SRS><SRS>EPSG:3857</SRS>
+				<LatLonBoundingBox minx="0.108624" miny="40.477710" maxx="3.378579" maxy="42.900140"/>
+				<BoundingBox SRS="EPSG:4326" minx="0.108624" miny="40.477710" maxx="3.378579" maxy="42.900140"/>
+				<BoundingBox SRS="EPSG:4230" minx="0.109826" miny="40.478870" maxx="3.379704" maxy="42.901212"/>
+				<BoundingBox SRS="EPSG:4258" minx="0.108624" miny="40.477710" maxx="3.378579" maxy="42.900140"/>
+				<BoundingBox SRS="EPSG:32631" minx="254904.96" miny="4484796.89" maxx="530907.30" maxy="4749795.10"/>
+				<BoundingBox SRS="EPSG:23031" minx="257000" miny="4485000" maxx="540000" maxy="4756000"/>
+				<BoundingBox SRS="EPSG:3857" maxx="387921.651632" maxy="5302989.995799" minx="4554.402748" miny="4936725.023919"/><BoundingBox SRS="EPSG:25831" minx="254904.96" miny="4484796.89" maxx="530907.30" maxy="4749795.10"/>
+				<Style>
+					<Name>default</Name>
+					<Title>Camp d'esports</Title>
+					<LegendURL width="100" height="31">
+						<Format>image/png</Format>
+						<OnlineResource xlink:href="http://galileo.icc.cat/arcgis/server/arcgisoutput/icc_bt5m_v_r_MapServer/wms/default17.png" xlink:type="simple" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+					</LegendURL>
+				</Style>
+				<ScaleHint min="0.0" max="6.138000"></ScaleHint>
+			</Layer>
+			<Layer queryable="1">
+				<Name>18</Name>
+				<Title>Platja i sorrals</Title>
+				<Abstract>Platja i sorrals</Abstract>
+				<SRS>EPSG:4326</SRS>
+				<SRS>EPSG:4230</SRS>
+				<SRS>EPSG:4258</SRS>
+				<SRS>EPSG:32631</SRS>
+				<SRS>EPSG:23031</SRS>
+				<SRS>EPSG:25831</SRS><SRS>EPSG:3857</SRS>
+				<LatLonBoundingBox minx="0.108624" miny="40.477710" maxx="3.378579" maxy="42.900140"/>
+				<BoundingBox SRS="EPSG:4326" minx="0.108624" miny="40.477710" maxx="3.378579" maxy="42.900140"/>
+				<BoundingBox SRS="EPSG:4230" minx="0.109826" miny="40.478870" maxx="3.379704" maxy="42.901212"/>
+				<BoundingBox SRS="EPSG:4258" minx="0.108624" miny="40.477710" maxx="3.378579" maxy="42.900140"/>
+				<BoundingBox SRS="EPSG:32631" minx="254904.96" miny="4484796.89" maxx="530907.30" maxy="4749795.10"/>
+				<BoundingBox SRS="EPSG:23031" minx="257000" miny="4485000" maxx="540000" maxy="4756000"/>
+				<BoundingBox SRS="EPSG:3857" maxx="387921.651632" maxy="5302989.995799" minx="4554.402748" miny="4936725.023919"/><BoundingBox SRS="EPSG:25831" minx="254904.96" miny="4484796.89" maxx="530907.30" maxy="4749795.10"/>
+				<Style>
+					<Name>default</Name>
+					<Title>Platja i sorrals</Title>
+					<LegendURL width="100" height="34">
+						<Format>image/png</Format>
+						<OnlineResource xlink:href="http://galileo.icc.cat/arcgis/server/arcgisoutput/icc_bt5m_v_r_MapServer/wms/default18.png" xlink:type="simple" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+					</LegendURL>
+				</Style>
+				<ScaleHint min="0.0" max="6.138000"></ScaleHint>
+			</Layer>
+			<Layer queryable="1">
+				<Name>19</Name>
+				<Title>Curs fluvial,estany,embassament</Title>
+				<Abstract>Curs fluvial,estany,embassament</Abstract>
+				<SRS>EPSG:4326</SRS>
+				<SRS>EPSG:4230</SRS>
+				<SRS>EPSG:4258</SRS>
+				<SRS>EPSG:32631</SRS>
+				<SRS>EPSG:23031</SRS>
+				<SRS>EPSG:25831</SRS><SRS>EPSG:3857</SRS>
+				<LatLonBoundingBox minx="0.108624" miny="40.477710" maxx="3.378579" maxy="42.900140"/>
+				<BoundingBox SRS="EPSG:4326" minx="0.108624" miny="40.477710" maxx="3.378579" maxy="42.900140"/>
+				<BoundingBox SRS="EPSG:4230" minx="0.109826" miny="40.478870" maxx="3.379704" maxy="42.901212"/>
+				<BoundingBox SRS="EPSG:4258" minx="0.108624" miny="40.477710" maxx="3.378579" maxy="42.900140"/>
+				<BoundingBox SRS="EPSG:32631" minx="254904.96" miny="4484796.89" maxx="530907.30" maxy="4749795.10"/>
+				<BoundingBox SRS="EPSG:23031" minx="257000" miny="4485000" maxx="540000" maxy="4756000"/>
+				<BoundingBox SRS="EPSG:3857" maxx="387921.651632" maxy="5302989.995799" minx="4554.402748" miny="4936725.023919"/><BoundingBox SRS="EPSG:25831" minx="254904.96" miny="4484796.89" maxx="530907.30" maxy="4749795.10"/>
+				<Style>
+					<Name>default</Name>
+					<Title>Curs fluvial,estany,embassament</Title>
+					<LegendURL width="100" height="41">
+						<Format>image/png</Format>
+						<OnlineResource xlink:href="http://galileo.icc.cat/arcgis/server/arcgisoutput/icc_bt5m_v_r_MapServer/wms/default19.png" xlink:type="simple" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+					</LegendURL>
+				</Style>
+				<ScaleHint min="0.0" max="6.138000"></ScaleHint>
+			</Layer>
+			<Layer queryable="1">
+				<Name>20</Name>
+				<Title>Pou</Title>
+				<Abstract>Pou</Abstract>
+				<SRS>EPSG:4326</SRS>
+				<SRS>EPSG:4230</SRS>
+				<SRS>EPSG:4258</SRS>
+				<SRS>EPSG:32631</SRS>
+				<SRS>EPSG:23031</SRS>
+				<SRS>EPSG:25831</SRS><SRS>EPSG:3857</SRS>
+				<LatLonBoundingBox minx="0.108624" miny="40.477710" maxx="3.378579" maxy="42.900140"/>
+				<BoundingBox SRS="EPSG:4326" minx="0.108624" miny="40.477710" maxx="3.378579" maxy="42.900140"/>
+				<BoundingBox SRS="EPSG:4230" minx="0.109826" miny="40.478870" maxx="3.379704" maxy="42.901212"/>
+				<BoundingBox SRS="EPSG:4258" minx="0.108624" miny="40.477710" maxx="3.378579" maxy="42.900140"/>
+				<BoundingBox SRS="EPSG:32631" minx="254904.96" miny="4484796.89" maxx="530907.30" maxy="4749795.10"/>
+				<BoundingBox SRS="EPSG:23031" minx="257000" miny="4485000" maxx="540000" maxy="4756000"/>
+				<BoundingBox SRS="EPSG:3857" maxx="387921.651632" maxy="5302989.995799" minx="4554.402748" miny="4936725.023919"/><BoundingBox SRS="EPSG:25831" minx="254904.96" miny="4484796.89" maxx="530907.30" maxy="4749795.10"/>
+				<Style>
+					<Name>default</Name>
+					<Title>Pou</Title>
+					<LegendURL width="100" height="65">
+						<Format>image/png</Format>
+						<OnlineResource xlink:href="http://galileo.icc.cat/arcgis/server/arcgisoutput/icc_bt5m_v_r_MapServer/wms/default20.png" xlink:type="simple" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+					</LegendURL>
+				</Style>
+				<ScaleHint min="0.0" max="6.138000"></ScaleHint>
+			</Layer>
+			<Layer queryable="1">
+				<Name>21</Name>
+				<Title>Dipòsit cobert</Title>
+				<Abstract>Dipòsit cobert</Abstract>
+				<SRS>EPSG:4326</SRS>
+				<SRS>EPSG:4230</SRS>
+				<SRS>EPSG:4258</SRS>
+				<SRS>EPSG:32631</SRS>
+				<SRS>EPSG:23031</SRS>
+				<SRS>EPSG:25831</SRS><SRS>EPSG:3857</SRS>
+				<LatLonBoundingBox minx="0.108624" miny="40.477710" maxx="3.378579" maxy="42.900140"/>
+				<BoundingBox SRS="EPSG:4326" minx="0.108624" miny="40.477710" maxx="3.378579" maxy="42.900140"/>
+				<BoundingBox SRS="EPSG:4230" minx="0.109826" miny="40.478870" maxx="3.379704" maxy="42.901212"/>
+				<BoundingBox SRS="EPSG:4258" minx="0.108624" miny="40.477710" maxx="3.378579" maxy="42.900140"/>
+				<BoundingBox SRS="EPSG:32631" minx="254904.96" miny="4484796.89" maxx="530907.30" maxy="4749795.10"/>
+				<BoundingBox SRS="EPSG:23031" minx="257000" miny="4485000" maxx="540000" maxy="4756000"/>
+				<BoundingBox SRS="EPSG:3857" maxx="387921.651632" maxy="5302989.995799" minx="4554.402748" miny="4936725.023919"/><BoundingBox SRS="EPSG:25831" minx="254904.96" miny="4484796.89" maxx="530907.30" maxy="4749795.10"/>
+				<Style>
+					<Name>default</Name>
+					<Title>Dipòsit cobert</Title>
+					<LegendURL width="100" height="34">
+						<Format>image/png</Format>
+						<OnlineResource xlink:href="http://galileo.icc.cat/arcgis/server/arcgisoutput/icc_bt5m_v_r_MapServer/wms/default21.png" xlink:type="simple" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+					</LegendURL>
+				</Style>
+				<ScaleHint min="0.0" max="6.138000"></ScaleHint>
+			</Layer>
+			<Layer queryable="1">
+				<Name>22</Name>
+				<Title>Xemeneia</Title>
+				<Abstract>Xemeneia</Abstract>
+				<SRS>EPSG:4326</SRS>
+				<SRS>EPSG:4230</SRS>
+				<SRS>EPSG:4258</SRS>
+				<SRS>EPSG:32631</SRS>
+				<SRS>EPSG:23031</SRS>
+				<SRS>EPSG:25831</SRS><SRS>EPSG:3857</SRS>
+				<LatLonBoundingBox minx="0.108624" miny="40.477710" maxx="3.378579" maxy="42.900140"/>
+				<BoundingBox SRS="EPSG:4326" minx="0.108624" miny="40.477710" maxx="3.378579" maxy="42.900140"/>
+				<BoundingBox SRS="EPSG:4230" minx="0.109826" miny="40.478870" maxx="3.379704" maxy="42.901212"/>
+				<BoundingBox SRS="EPSG:4258" minx="0.108624" miny="40.477710" maxx="3.378579" maxy="42.900140"/>
+				<BoundingBox SRS="EPSG:32631" minx="254904.96" miny="4484796.89" maxx="530907.30" maxy="4749795.10"/>
+				<BoundingBox SRS="EPSG:23031" minx="257000" miny="4485000" maxx="540000" maxy="4756000"/>
+				<BoundingBox SRS="EPSG:3857" maxx="387921.651632" maxy="5302989.995799" minx="4554.402748" miny="4936725.023919"/><BoundingBox SRS="EPSG:25831" minx="254904.96" miny="4484796.89" maxx="530907.30" maxy="4749795.10"/>
+				<Style>
+					<Name>default</Name>
+					<Title>Xemeneia</Title>
+					<LegendURL width="100" height="41">
+						<Format>image/png</Format>
+						<OnlineResource xlink:href="http://galileo.icc.cat/arcgis/server/arcgisoutput/icc_bt5m_v_r_MapServer/wms/default22.png" xlink:type="simple" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+					</LegendURL>
+				</Style>
+				<ScaleHint min="0.0" max="6.138000"></ScaleHint>
+			</Layer>
+			<Layer queryable="1">
+				<Name>23</Name>
+				<Title>Vies de comunicació (line)</Title>
+				<Abstract>Vies de comunicació (line)</Abstract>
+				<SRS>EPSG:4326</SRS>
+				<SRS>EPSG:4230</SRS>
+				<SRS>EPSG:4258</SRS>
+				<SRS>EPSG:32631</SRS>
+				<SRS>EPSG:23031</SRS>
+				<SRS>EPSG:25831</SRS><SRS>EPSG:3857</SRS>
+				<LatLonBoundingBox minx="0.108624" miny="40.477710" maxx="3.378579" maxy="42.900140"/>
+				<BoundingBox SRS="EPSG:4326" minx="0.108624" miny="40.477710" maxx="3.378579" maxy="42.900140"/>
+				<BoundingBox SRS="EPSG:4230" minx="0.109826" miny="40.478870" maxx="3.379704" maxy="42.901212"/>
+				<BoundingBox SRS="EPSG:4258" minx="0.108624" miny="40.477710" maxx="3.378579" maxy="42.900140"/>
+				<BoundingBox SRS="EPSG:32631" minx="254904.96" miny="4484796.89" maxx="530907.30" maxy="4749795.10"/>
+				<BoundingBox SRS="EPSG:23031" minx="257000" miny="4485000" maxx="540000" maxy="4756000"/>
+				<BoundingBox SRS="EPSG:3857" maxx="387921.651632" maxy="5302989.995799" minx="4554.402748" miny="4936725.023919"/><BoundingBox SRS="EPSG:25831" minx="254904.96" miny="4484796.89" maxx="530907.30" maxy="4749795.10"/>
+				<Style>
+					<Name>default</Name>
+					<Title>Vies de comunicació (line)</Title>
+					<LegendURL width="100" height="239">
+						<Format>image/png</Format>
+						<OnlineResource xlink:href="http://galileo.icc.cat/arcgis/server/arcgisoutput/icc_bt5m_v_r_MapServer/wms/default23.png" xlink:type="simple" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+					</LegendURL>
+				</Style>
+				<ScaleHint min="0.0" max="6.138000"></ScaleHint>
+			</Layer>
+			<Layer queryable="1">
+				<Name>24</Name>
+				<Title>Hidrografia lineal (line)</Title>
+				<Abstract>Hidrografia lineal (line)</Abstract>
+				<SRS>EPSG:4326</SRS>
+				<SRS>EPSG:4230</SRS>
+				<SRS>EPSG:4258</SRS>
+				<SRS>EPSG:32631</SRS>
+				<SRS>EPSG:23031</SRS>
+				<SRS>EPSG:25831</SRS><SRS>EPSG:3857</SRS>
+				<LatLonBoundingBox minx="0.108624" miny="40.477710" maxx="3.378579" maxy="42.900140"/>
+				<BoundingBox SRS="EPSG:4326" minx="0.108624" miny="40.477710" maxx="3.378579" maxy="42.900140"/>
+				<BoundingBox SRS="EPSG:4230" minx="0.109826" miny="40.478870" maxx="3.379704" maxy="42.901212"/>
+				<BoundingBox SRS="EPSG:4258" minx="0.108624" miny="40.477710" maxx="3.378579" maxy="42.900140"/>
+				<BoundingBox SRS="EPSG:32631" minx="254904.96" miny="4484796.89" maxx="530907.30" maxy="4749795.10"/>
+				<BoundingBox SRS="EPSG:23031" minx="257000" miny="4485000" maxx="540000" maxy="4756000"/>
+				<BoundingBox SRS="EPSG:3857" maxx="387921.651632" maxy="5302989.995799" minx="4554.402748" miny="4936725.023919"/><BoundingBox SRS="EPSG:25831" minx="254904.96" miny="4484796.89" maxx="530907.30" maxy="4749795.10"/>
+				<Style>
+					<Name>default</Name>
+					<Title>Hidrografia lineal (line)</Title>
+					<LegendURL width="100" height="96">
+						<Format>image/png</Format>
+						<OnlineResource xlink:href="http://galileo.icc.cat/arcgis/server/arcgisoutput/icc_bt5m_v_r_MapServer/wms/default24.png" xlink:type="simple" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+					</LegendURL>
+				</Style>
+				<ScaleHint min="0.0" max="6.138000"></ScaleHint>
+			</Layer>
+			<Layer queryable="1">
+				<Name>25</Name>
+				<Title>Poblament / Infraestr. aux. lineals (line)</Title>
+				<Abstract>Poblament / Infraestr. aux. lineals (line)</Abstract>
+				<SRS>EPSG:4326</SRS>
+				<SRS>EPSG:4230</SRS>
+				<SRS>EPSG:4258</SRS>
+				<SRS>EPSG:32631</SRS>
+				<SRS>EPSG:23031</SRS>
+				<SRS>EPSG:25831</SRS><SRS>EPSG:3857</SRS>
+				<LatLonBoundingBox minx="0.108624" miny="40.477710" maxx="3.378579" maxy="42.900140"/>
+				<BoundingBox SRS="EPSG:4326" minx="0.108624" miny="40.477710" maxx="3.378579" maxy="42.900140"/>
+				<BoundingBox SRS="EPSG:4230" minx="0.109826" miny="40.478870" maxx="3.379704" maxy="42.901212"/>
+				<BoundingBox SRS="EPSG:4258" minx="0.108624" miny="40.477710" maxx="3.378579" maxy="42.900140"/>
+				<BoundingBox SRS="EPSG:32631" minx="254904.96" miny="4484796.89" maxx="530907.30" maxy="4749795.10"/>
+				<BoundingBox SRS="EPSG:23031" minx="257000" miny="4485000" maxx="540000" maxy="4756000"/>
+				<BoundingBox SRS="EPSG:3857" maxx="387921.651632" maxy="5302989.995799" minx="4554.402748" miny="4936725.023919"/><BoundingBox SRS="EPSG:25831" minx="254904.96" miny="4484796.89" maxx="530907.30" maxy="4749795.10"/>
+				<Style>
+					<Name>default</Name>
+					<Title>Poblament / Infraestr. aux. lineals (line)</Title>
+					<LegendURL width="100" height="127">
+						<Format>image/png</Format>
+						<OnlineResource xlink:href="http://galileo.icc.cat/arcgis/server/arcgisoutput/icc_bt5m_v_r_MapServer/wms/default25.png" xlink:type="simple" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+					</LegendURL>
+				</Style>
+				<ScaleHint min="0.0" max="6.138000"></ScaleHint>
+			</Layer>
+			<Layer queryable="1">
+				<Name>26</Name>
+				<Title>Poblament / Infraestr. aux. poligonals (line)</Title>
+				<Abstract>Poblament / Infraestr. aux. poligonals (line)</Abstract>
+				<SRS>EPSG:4326</SRS>
+				<SRS>EPSG:4230</SRS>
+				<SRS>EPSG:4258</SRS>
+				<SRS>EPSG:32631</SRS>
+				<SRS>EPSG:23031</SRS>
+				<SRS>EPSG:25831</SRS><SRS>EPSG:3857</SRS>
+				<LatLonBoundingBox minx="0.108624" miny="40.477710" maxx="3.378579" maxy="42.900140"/>
+				<BoundingBox SRS="EPSG:4326" minx="0.108624" miny="40.477710" maxx="3.378579" maxy="42.900140"/>
+				<BoundingBox SRS="EPSG:4230" minx="0.109826" miny="40.478870" maxx="3.379704" maxy="42.901212"/>
+				<BoundingBox SRS="EPSG:4258" minx="0.108624" miny="40.477710" maxx="3.378579" maxy="42.900140"/>
+				<BoundingBox SRS="EPSG:32631" minx="254904.96" miny="4484796.89" maxx="530907.30" maxy="4749795.10"/>
+				<BoundingBox SRS="EPSG:23031" minx="257000" miny="4485000" maxx="540000" maxy="4756000"/>
+				<BoundingBox SRS="EPSG:3857" maxx="387921.651632" maxy="5302989.995799" minx="4554.402748" miny="4936725.023919"/><BoundingBox SRS="EPSG:25831" minx="254904.96" miny="4484796.89" maxx="530907.30" maxy="4749795.10"/>
+				<Style>
+					<Name>default</Name>
+					<Title>Poblament / Infraestr. aux. poligonals (line)</Title>
+					<LegendURL width="100" height="186">
+						<Format>image/png</Format>
+						<OnlineResource xlink:href="http://galileo.icc.cat/arcgis/server/arcgisoutput/icc_bt5m_v_r_MapServer/wms/default26.png" xlink:type="simple" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+					</LegendURL>
+				</Style>
+				<ScaleHint min="0.0" max="6.138000"></ScaleHint>
+			</Layer>
+			<Layer queryable="1">
+				<Name>27</Name>
+				<Title>Toponímia</Title>
+				<Abstract>Toponímia</Abstract>
+				<SRS>EPSG:4326</SRS>
+				<SRS>EPSG:4230</SRS>
+				<SRS>EPSG:4258</SRS>
+				<SRS>EPSG:32631</SRS>
+				<SRS>EPSG:23031</SRS>
+				<SRS>EPSG:25831</SRS><SRS>EPSG:3857</SRS>
+				<LatLonBoundingBox minx="0.108624" miny="40.477710" maxx="3.378579" maxy="42.900140"/>
+				<BoundingBox SRS="EPSG:4326" minx="0.108624" miny="40.477710" maxx="3.378579" maxy="42.900140"/>
+				<BoundingBox SRS="EPSG:4230" minx="0.109826" miny="40.478870" maxx="3.379704" maxy="42.901212"/>
+				<BoundingBox SRS="EPSG:4258" minx="0.108624" miny="40.477710" maxx="3.378579" maxy="42.900140"/>
+				<BoundingBox SRS="EPSG:32631" minx="254904.96" miny="4484796.89" maxx="530907.30" maxy="4749795.10"/>
+				<BoundingBox SRS="EPSG:23031" minx="257000" miny="4485000" maxx="540000" maxy="4756000"/>
+				<BoundingBox SRS="EPSG:3857" maxx="387921.651632" maxy="5302989.995799" minx="4554.402748" miny="4936725.023919"/><BoundingBox SRS="EPSG:25831" minx="254904.96" miny="4484796.89" maxx="530907.30" maxy="4749795.10"/>
+				<Style>
+					<Name>default</Name>
+					<Title>Toponímia</Title>
+					<LegendURL width="100" height="31">
+						<Format>image/png</Format>
+						<OnlineResource xlink:href="http://galileo.icc.cat/arcgis/server/arcgisoutput/icc_bt5m_v_r_MapServer/wms/default27.png" xlink:type="simple" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+					</LegendURL>
+				</Style>
+				<ScaleHint min="0.0" max="2.970000"></ScaleHint>
+			</Layer>
+		</Layer>
+	</Capability>
+</WMT_MS_Capabilities>
