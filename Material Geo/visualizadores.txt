@@ -1,0 +1,2 @@
+https://mapshaper.org/ --> Visualizador de SHPs
+http://geojson.io --> Visualizador GeoJSON

@@ -1,0 +1,23 @@
+INFORMACIÓN:		   	Límites administrativos ratificados por convenio referentes a
+			   	la Plataforma Continental entre Francia y España en Golfo de Vizcaya,
+			   	entre España e Italia en el Mar vMediterráneo y Zona Económica Exclusiva
+				en el Mediterráneo.
+
+PROYECCIÓN:	 	   	COORDENADAS GEOGRAFICAS WGS84 SIN PROYECCIÓN (EPSG:4326).
+
+FORMATO:	 	   	SHAPE (ESRI).
+
+CAPAS:	
+    	MarTerritorial	   	Límites del Mar Territorial y la Zona Contigua en el Golfo de Vizcaya.
+	PlataformaContinental	Límites de la Plataforma Contitnental.
+	ZEEE_Mediterraneo	Límites de la Zona Económica Exclusiva Española en el Mediterráneo
+	ZEEE_Mediterraneo_puntos  Puntos de la Capa ZEEE_Mediterraneo
+	
+
+NOTA:			   	Todas las capas contienen los atributos con el nombre del Convenio y el Boletín de 
+				Publicación. Se incluyen fichero con copia en PDF de las Disposiciones de
+				Ratificación de los distintos límites.
+
+CONTACTO:		   	ihmcdatos@fn.mde.es
+
+
