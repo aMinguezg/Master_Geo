@@ -1,0 +1,593 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Mapa puentes - Master</name>
+    <description>Ruta de los puentes que hay entre Lugones y La Corredoria pasando por Parque Principado</description>
+    <Style id="icon-1899-DB4436-normal">
+      <IconStyle>
+        <color>ff3644db</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1899-DB4436-highlight">
+      <IconStyle>
+        <color>ff3644db</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1899-DB4436">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-DB4436-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-DB4436-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1899-DB4436-nodesc-normal">
+      <IconStyle>
+        <color>ff3644db</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-1899-DB4436-nodesc-highlight">
+      <IconStyle>
+        <color>ff3644db</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-1899-DB4436-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-DB4436-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-DB4436-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-FF0000-4000-nodesc-normal">
+      <LineStyle>
+        <color>ff0000ff</color>
+        <width>4</width>
+      </LineStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="line-FF0000-4000-nodesc-highlight">
+      <LineStyle>
+        <color>ff0000ff</color>
+        <width>6</width>
+      </LineStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="line-FF0000-4000-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#line-FF0000-4000-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#line-FF0000-4000-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Folder>
+      <name>Capa sin nombre</name>
+    </Folder>
+    <Folder>
+      <name>Marcadores</name>
+      <Placemark>
+        <name>Puente 8</name>
+        <description><![CDATA[<img src="https://doc-00-ak-mymaps.googleusercontent.com/untrusted/hostedimage/htbltg09ho0idvehkmb2t5bmf8/2rtqj7t6n7asicbkkrd7nkebcs/1590524295750/byAQHmSoxlml6_sMJZJRiiLhGqs8TsiG/12821871717170190720/5AF2TALqV89OKpsFHjMqUexT869Fg_maoWq2iDJxGAwdZnYyCfwpE6O06uHDOiNiQPOLtZh1qXw6j3-_95fC07CRyrjLxsnWv08sto1i4MNO2IfV2XOZKpkpfB_CZRBcn0LyWN6Xa5Cv6oCm3uIHMmRGSmtgFQ9MxTTGbitKJnTz8L-SVFQ5cLTfn4Wv7EYBFHPE7hEenQPjcEhcOfhrBiR6tyWm6yVHxRXZFLip7Yd3GuMIsdirc4b-Kr2z_KwcM7vRlpw93X_ddRgpx3INPZGZs_mPzvZQ6zw?session=0&fife" height="200" width="auto" /><br><br>descripción: <br>color: 0]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="descripción">
+            <value/>
+          </Data>
+          <Data name="color">
+            <value>0</value>
+          </Data>
+          <Data name="gx_media_links">
+            <value><![CDATA[https://doc-00-ak-mymaps.googleusercontent.com/untrusted/hostedimage/htbltg09ho0idvehkmb2t5bmf8/2rtqj7t6n7asicbkkrd7nkebcs/1590524295750/byAQHmSoxlml6_sMJZJRiiLhGqs8TsiG/12821871717170190720/5AF2TALqV89OKpsFHjMqUexT869Fg_maoWq2iDJxGAwdZnYyCfwpE6O06uHDOiNiQPOLtZh1qXw6j3-_95fC07CRyrjLxsnWv08sto1i4MNO2IfV2XOZKpkpfB_CZRBcn0LyWN6Xa5Cv6oCm3uIHMmRGSmtgFQ9MxTTGbitKJnTz8L-SVFQ5cLTfn4Wv7EYBFHPE7hEenQPjcEhcOfhrBiR6tyWm6yVHxRXZFLip7Yd3GuMIsdirc4b-Kr2z_KwcM7vRlpw93X_ddRgpx3INPZGZs_mPzvZQ6zw?session=0&fife]]></value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -5.810241,43.385983,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Puente 7</name>
+        <description><![CDATA[<img src="https://doc-0k-ak-mymaps.googleusercontent.com/untrusted/hostedimage/htbltg09ho0idvehkmb2t5bmf8/48o97v8ljc4sbs9g1odir3s66o/1590524295750/byAQHmSoxlml6_sMJZJRiiLhGqs8TsiG/12821871717170190720/5AF2TALojfJeoz7xMeHb_fQjkzsz8NyfL1an_I4lJpJ-n2Mkd6NmcoB6cKvSMK9wMddOuKloXQbwS3I1iSjhcp3Rzw1GH2YloiL9Q4Dl4I2E5-ri3h5M8-v8Ql8nwrfepW5JrC-pbKWtN7G0JjtnXtQIB91Ayd9scKMO4x0QsUo1jKJDS7QS9pDdoYEPb5LHICFQpEY49S05rewPSDUjqhvhUsoJNC7aN3S1B6W2bhtgn47505z8Jxy8akVTSC6aAatqns2i7wjqaAg1pwrO488QLHo6QptNHXw?session=0&fife" height="200" width="auto" /><br><br>descripción: <br>color: 0]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="descripción">
+            <value/>
+          </Data>
+          <Data name="color">
+            <value>0</value>
+          </Data>
+          <Data name="gx_media_links">
+            <value><![CDATA[https://doc-0k-ak-mymaps.googleusercontent.com/untrusted/hostedimage/htbltg09ho0idvehkmb2t5bmf8/48o97v8ljc4sbs9g1odir3s66o/1590524295750/byAQHmSoxlml6_sMJZJRiiLhGqs8TsiG/12821871717170190720/5AF2TALojfJeoz7xMeHb_fQjkzsz8NyfL1an_I4lJpJ-n2Mkd6NmcoB6cKvSMK9wMddOuKloXQbwS3I1iSjhcp3Rzw1GH2YloiL9Q4Dl4I2E5-ri3h5M8-v8Ql8nwrfepW5JrC-pbKWtN7G0JjtnXtQIB91Ayd9scKMO4x0QsUo1jKJDS7QS9pDdoYEPb5LHICFQpEY49S05rewPSDUjqhvhUsoJNC7aN3S1B6W2bhtgn47505z8Jxy8akVTSC6aAatqns2i7wjqaAg1pwrO488QLHo6QptNHXw?session=0&fife]]></value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -5.807845,43.38781,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Puente 6</name>
+        <description><![CDATA[<img src="https://doc-0s-ak-mymaps.googleusercontent.com/untrusted/hostedimage/htbltg09ho0idvehkmb2t5bmf8/nniapnoo67nfkfs2jgri2abnug/1590524295750/byAQHmSoxlml6_sMJZJRiiLhGqs8TsiG/12821871717170190720/5AF2TALqQixl3N266xD3LTK1UOR6ThTB0yf_hDJypeQw7aNdbTaNkJpxsFkzF3jQJihWN-Eadcsytq3xmcfKG02k2k3DUtOgh88SZduQnVoPzm0TeXDJEJmDmwWA0oMK9HOgc5PhVqZahZ0Av5TtlB5HG-1f7NwCwpivyIpYLP_GrP-CPL1CnCSQGnG_OxhwGqH28fJo_ncGV71nA3HBEQRZ53HbF6sCKJSMkqiDYixAkb_iaGyPVoAUKKjGOSKHfHNdXtif4AXQV4X4ZGyf1dnb4QkuqL9wugw?session=0&fife" height="200" width="auto" /><br><br>descripción: <br>color: 0]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="descripción">
+            <value/>
+          </Data>
+          <Data name="color">
+            <value>0</value>
+          </Data>
+          <Data name="gx_media_links">
+            <value><![CDATA[https://doc-0s-ak-mymaps.googleusercontent.com/untrusted/hostedimage/htbltg09ho0idvehkmb2t5bmf8/nniapnoo67nfkfs2jgri2abnug/1590524295750/byAQHmSoxlml6_sMJZJRiiLhGqs8TsiG/12821871717170190720/5AF2TALqQixl3N266xD3LTK1UOR6ThTB0yf_hDJypeQw7aNdbTaNkJpxsFkzF3jQJihWN-Eadcsytq3xmcfKG02k2k3DUtOgh88SZduQnVoPzm0TeXDJEJmDmwWA0oMK9HOgc5PhVqZahZ0Av5TtlB5HG-1f7NwCwpivyIpYLP_GrP-CPL1CnCSQGnG_OxhwGqH28fJo_ncGV71nA3HBEQRZ53HbF6sCKJSMkqiDYixAkb_iaGyPVoAUKKjGOSKHfHNdXtif4AXQV4X4ZGyf1dnb4QkuqL9wugw?session=0&fife]]></value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -5.809963,43.388817,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Puente 5</name>
+        <description><![CDATA[<img src="https://doc-00-ak-mymaps.googleusercontent.com/untrusted/hostedimage/htbltg09ho0idvehkmb2t5bmf8/9jsf43ajeti8rq732hhtol04cs/1590524295750/byAQHmSoxlml6_sMJZJRiiLhGqs8TsiG/12821871717170190720/5AF2TALoQQqX31kB5ByQNBlNSBIMIpmp9gkKz965sjDROUsJ8EFLrDnmTc3BUSmf5SmodybwyROa8sGs4lVD-BagpoYr0WC2eU_Px5DDmvBntTPUG_wNAXNhMmoX7S9Z_hAOBcU9HFu_HRZFVQN1kSydOWEaNqe6j81z48TwUsXkxMDIhiV17OCqH1d3Jlh-Wwu_pMCJMuwXw3_2Ks9Bium6ePQjHFeM0Ec8LEhPKdbGXraXDi07se5gfWJ_CaPkqZZ1FSMW2hSnklCdDdSKeiwFzbBsnHfPb9Q?session=0&fife" height="200" width="auto" /><br><br>descripción: <br>color: 0]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="descripción">
+            <value/>
+          </Data>
+          <Data name="color">
+            <value>0</value>
+          </Data>
+          <Data name="gx_media_links">
+            <value><![CDATA[https://doc-00-ak-mymaps.googleusercontent.com/untrusted/hostedimage/htbltg09ho0idvehkmb2t5bmf8/9jsf43ajeti8rq732hhtol04cs/1590524295750/byAQHmSoxlml6_sMJZJRiiLhGqs8TsiG/12821871717170190720/5AF2TALoQQqX31kB5ByQNBlNSBIMIpmp9gkKz965sjDROUsJ8EFLrDnmTc3BUSmf5SmodybwyROa8sGs4lVD-BagpoYr0WC2eU_Px5DDmvBntTPUG_wNAXNhMmoX7S9Z_hAOBcU9HFu_HRZFVQN1kSydOWEaNqe6j81z48TwUsXkxMDIhiV17OCqH1d3Jlh-Wwu_pMCJMuwXw3_2Ks9Bium6ePQjHFeM0Ec8LEhPKdbGXraXDi07se5gfWJ_CaPkqZZ1FSMW2hSnklCdDdSKeiwFzbBsnHfPb9Q?session=0&fife]]></value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -5.810084,43.388702,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Puente 4</name>
+        <description><![CDATA[<img src="https://doc-0o-ak-mymaps.googleusercontent.com/untrusted/hostedimage/htbltg09ho0idvehkmb2t5bmf8/rle6tql4mnt2ina3894o37ndf0/1590524295750/byAQHmSoxlml6_sMJZJRiiLhGqs8TsiG/12821871717170190720/5AF2TALp9yJpHIDxmbkLg8Ns0OeUULFNo0JNcFUBAGOymeYe9JGvy7c52erO-xd41-LuO_KzN2QWUJm3nRFWZjE-DfJ0S47bBKv7q9M4OM8otlImnQEeHIu4MaQDR-cgqKKFrBwDT5E_RGM0r3CXPDGkywxzV4Wn9PZ25YQeWVgKrucq13AXF2fUApZbR32J_4prgeIwvxvvWQTLywobsiz6j4mHSDSHrz_zrvokVr_tYrUfKkPNqCDYEbKmDZcCmyC492i012w_HW5JDaNOAPW9woDhZkmKucA?session=0&fife" height="200" width="auto" /><br><br>descripción: <br>color: 0]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="descripción">
+            <value/>
+          </Data>
+          <Data name="color">
+            <value>0</value>
+          </Data>
+          <Data name="gx_media_links">
+            <value><![CDATA[https://doc-0o-ak-mymaps.googleusercontent.com/untrusted/hostedimage/htbltg09ho0idvehkmb2t5bmf8/rle6tql4mnt2ina3894o37ndf0/1590524295750/byAQHmSoxlml6_sMJZJRiiLhGqs8TsiG/12821871717170190720/5AF2TALp9yJpHIDxmbkLg8Ns0OeUULFNo0JNcFUBAGOymeYe9JGvy7c52erO-xd41-LuO_KzN2QWUJm3nRFWZjE-DfJ0S47bBKv7q9M4OM8otlImnQEeHIu4MaQDR-cgqKKFrBwDT5E_RGM0r3CXPDGkywxzV4Wn9PZ25YQeWVgKrucq13AXF2fUApZbR32J_4prgeIwvxvvWQTLywobsiz6j4mHSDSHrz_zrvokVr_tYrUfKkPNqCDYEbKmDZcCmyC492i012w_HW5JDaNOAPW9woDhZkmKucA?session=0&fife]]></value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -5.811744,43.38908,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Puente 3</name>
+        <description><![CDATA[<img src="https://doc-14-ak-mymaps.googleusercontent.com/untrusted/hostedimage/htbltg09ho0idvehkmb2t5bmf8/v26laf3os7sbgp7ktnc7vpj7fs/1590524295750/byAQHmSoxlml6_sMJZJRiiLhGqs8TsiG/12821871717170190720/5AF2TALpCT51WCifho9m4ESm_ufG6SBrnOpJv1xJdvvw4DGRIvj5JnNL1AGOjwEq5MgObUYWvRjyMC78CkMdv-yIcRn8NqvZeJgQ6erwYktgVw8Gy7WkRBryn-q-1tWLYOj2PGFdcNflZ4eUzO7dfXLeZOQ2RrHnnI4H___03MOLuqyB4k_j5pyfTNwymfkWo_2XJxuVt4GKT4FW4a2gClrmOAhTW8k5B-sTH8nPrbZgDex1veMjVyF2jeBpmVExAsk7hMXJ9V1ypCjhLMhMsOIj0EShC1eJ-Vg?session=0&fife" height="200" width="auto" /><br><br>descripción: <br>color: 0]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="descripción">
+            <value/>
+          </Data>
+          <Data name="color">
+            <value>0</value>
+          </Data>
+          <Data name="gx_media_links">
+            <value><![CDATA[https://doc-14-ak-mymaps.googleusercontent.com/untrusted/hostedimage/htbltg09ho0idvehkmb2t5bmf8/v26laf3os7sbgp7ktnc7vpj7fs/1590524295750/byAQHmSoxlml6_sMJZJRiiLhGqs8TsiG/12821871717170190720/5AF2TALpCT51WCifho9m4ESm_ufG6SBrnOpJv1xJdvvw4DGRIvj5JnNL1AGOjwEq5MgObUYWvRjyMC78CkMdv-yIcRn8NqvZeJgQ6erwYktgVw8Gy7WkRBryn-q-1tWLYOj2PGFdcNflZ4eUzO7dfXLeZOQ2RrHnnI4H___03MOLuqyB4k_j5pyfTNwymfkWo_2XJxuVt4GKT4FW4a2gClrmOAhTW8k5B-sTH8nPrbZgDex1veMjVyF2jeBpmVExAsk7hMXJ9V1ypCjhLMhMsOIj0EShC1eJ-Vg?session=0&fife]]></value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -5.81803,43.391354,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Puente 2</name>
+        <description><![CDATA[<img src="https://doc-04-ak-mymaps.googleusercontent.com/untrusted/hostedimage/htbltg09ho0idvehkmb2t5bmf8/vvhosfgbdl2bjb4c4qmq2vafgg/1590524295750/byAQHmSoxlml6_sMJZJRiiLhGqs8TsiG/12821871717170190720/5AF2TALrzAFH8IndVpdu_guUOK3eJj5gGZ7s3CDeVtwDq7SOpp02U3G3H1xs26gp-YE167r57eCDZSWmhr77MkfMCoumnHs6vAr8CeeDtacTulDyT4Gc-yjiInHKwkYnkU6UYpEkhRwFioOxZsP-u0L8zRbRY8RremxyKyWDRo40G4QklHQH52LOWIvn3W7CSxk8Zzd5b7BkDf9cvur47I8IaNb6NbUcB7iApJBgIYSwi2q-9IQSIoa60fuJDgD9M4-hlCi3QhIhpTPUPRS9eGsumM4XFKt4Xdw?session=0&fife" height="200" width="auto" /><br><br>descripción: <br>color: 0]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="descripción">
+            <value/>
+          </Data>
+          <Data name="color">
+            <value>0</value>
+          </Data>
+          <Data name="gx_media_links">
+            <value><![CDATA[https://doc-04-ak-mymaps.googleusercontent.com/untrusted/hostedimage/htbltg09ho0idvehkmb2t5bmf8/vvhosfgbdl2bjb4c4qmq2vafgg/1590524295750/byAQHmSoxlml6_sMJZJRiiLhGqs8TsiG/12821871717170190720/5AF2TALrzAFH8IndVpdu_guUOK3eJj5gGZ7s3CDeVtwDq7SOpp02U3G3H1xs26gp-YE167r57eCDZSWmhr77MkfMCoumnHs6vAr8CeeDtacTulDyT4Gc-yjiInHKwkYnkU6UYpEkhRwFioOxZsP-u0L8zRbRY8RremxyKyWDRo40G4QklHQH52LOWIvn3W7CSxk8Zzd5b7BkDf9cvur47I8IaNb6NbUcB7iApJBgIYSwi2q-9IQSIoa60fuJDgD9M4-hlCi3QhIhpTPUPRS9eGsumM4XFKt4Xdw?session=0&fife]]></value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -5.818437,43.3917,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Puente 1</name>
+        <description><![CDATA[<img src="https://doc-0o-ak-mymaps.googleusercontent.com/untrusted/hostedimage/htbltg09ho0idvehkmb2t5bmf8/r8uvqgnl0su2pc7sph96rhhltc/1590524295750/byAQHmSoxlml6_sMJZJRiiLhGqs8TsiG/12821871717170190720/5AF2TALrKRRQxO3iUV4ej_pjiBt7oGBivFm_DGP71g-yr0uGimKq0ySWo8Zu_tcQZdW-r3T-4tXIDq1MK7YXxrU40e17yIYyF_BDKJa4sSSk2fp8PFSw5uxY9htMkFtCYufrUtsf_BUpAVFvVE2QytWl8TZVew-MlJkDeBqGch_T5etSouz2m2YUkl3R3i7q4AAwh8VASp-L-QvAQyvuwUEOcXxB8RiTftjH1-yd0kF5PVBhQj0C4Efa4JPH3v63VmsLmphzJLu0oAk6j48TZYyKI9ozrfUy_8g?session=0&fife" height="200" width="auto" /><br><br>descripción: <br>color: 0<br><br><img src="https://doc-14-ak-mymaps.googleusercontent.com/untrusted/hostedimage/htbltg09ho0idvehkmb2t5bmf8/sc3fi6ngdbi85nql6tb6c7ht4k/1590524295750/byAQHmSoxlml6_sMJZJRiiLhGqs8TsiG/12821871717170190720/5AF2TALqhwexE6nnWmiuw1DLWv7X_zgZ3xjAMULN6I7KMWgLxKitCzuKCzT8DOq0mprgTYMzbnjWujmC5MKrGkuWjCt0iT10rNTbBASYCWNm7i8AlyGDcudfRPwSHE0WBqILnnLIozLu0_5fmfypqVnNT69fT2loWDRJVUgkxegiEwRnM8shqxhAPGHTLpdmCt9F6HVyzO3Vbvzx788MgRbfL7yt05JAxAopVIavkWvbkfWFDkj3dTCu7FXh9KDvVr5VQb5spDCUFs1hGMrdeb8BmXwL-OAPFzQ?session=0&fife" height="200" width="auto" />]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="descripción">
+            <value/>
+          </Data>
+          <Data name="color">
+            <value>0</value>
+          </Data>
+          <Data name="gx_media_links">
+            <value><![CDATA[https://doc-0o-ak-mymaps.googleusercontent.com/untrusted/hostedimage/htbltg09ho0idvehkmb2t5bmf8/r8uvqgnl0su2pc7sph96rhhltc/1590524295750/byAQHmSoxlml6_sMJZJRiiLhGqs8TsiG/12821871717170190720/5AF2TALrKRRQxO3iUV4ej_pjiBt7oGBivFm_DGP71g-yr0uGimKq0ySWo8Zu_tcQZdW-r3T-4tXIDq1MK7YXxrU40e17yIYyF_BDKJa4sSSk2fp8PFSw5uxY9htMkFtCYufrUtsf_BUpAVFvVE2QytWl8TZVew-MlJkDeBqGch_T5etSouz2m2YUkl3R3i7q4AAwh8VASp-L-QvAQyvuwUEOcXxB8RiTftjH1-yd0kF5PVBhQj0C4Efa4JPH3v63VmsLmphzJLu0oAk6j48TZYyKI9ozrfUy_8g?session=0&fife https://doc-14-ak-mymaps.googleusercontent.com/untrusted/hostedimage/htbltg09ho0idvehkmb2t5bmf8/sc3fi6ngdbi85nql6tb6c7ht4k/1590524295750/byAQHmSoxlml6_sMJZJRiiLhGqs8TsiG/12821871717170190720/5AF2TALqhwexE6nnWmiuw1DLWv7X_zgZ3xjAMULN6I7KMWgLxKitCzuKCzT8DOq0mprgTYMzbnjWujmC5MKrGkuWjCt0iT10rNTbBASYCWNm7i8AlyGDcudfRPwSHE0WBqILnnLIozLu0_5fmfypqVnNT69fT2loWDRJVUgkxegiEwRnM8shqxhAPGHTLpdmCt9F6HVyzO3Vbvzx788MgRbfL7yt05JAxAopVIavkWvbkfWFDkj3dTCu7FXh9KDvVr5VQb5spDCUFs1hGMrdeb8BmXwL-OAPFzQ?session=0&fife]]></value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -5.817665,43.39337,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Rutas</name>
+      <Placemark>
+        <name>comienzo</name>
+        <styleUrl>#icon-1899-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -5.817601,43.393356,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Ruta Master</name>
+        <styleUrl>#line-FF0000-4000-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -5.817601,43.393356,240.5
+            -5.817576,43.393517,239.13
+            -5.81741,43.393417,261.98
+            -5.817387,43.393356,253.28
+            -5.817373,43.393307,250.41
+            -5.817353,43.39325,244.07
+            -5.817352,43.393204,239.8
+            -5.817389,43.393154,232.71
+            -5.817384,43.3931,229.06
+            -5.817388,43.393036,227.77
+            -5.81737,43.392986,227.56
+            -5.817373,43.39293,226.99
+            -5.817406,43.392876,226.2
+            -5.817431,43.39283,225.68
+            -5.817464,43.392784,224.38
+            -5.817514,43.39275,223.4
+            -5.817548,43.39271,222.17
+            -5.817586,43.392673,220.59
+            -5.817633,43.392624,219.63
+            -5.817688,43.392574,218.37
+            -5.817741,43.392525,214.92
+            -5.817768,43.392483,213.98
+            -5.817824,43.392395,212.54
+            -5.81785,43.39235,211.5
+            -5.817881,43.392307,210.38
+            -5.817924,43.392254,208.47
+            -5.817953,43.392212,207.9
+            -5.817983,43.392166,206.55
+            -5.818026,43.392124,204.19
+            -5.81807,43.392075,201.17
+            -5.818119,43.392033,198.65
+            -5.81817,43.39201,197.85
+            -5.818318,43.39192,197.02
+            -5.818243,43.391884,196.66
+            -5.818195,43.391914,196.33
+            -5.818156,43.39187,196.78
+            -5.818101,43.391838,196.86
+            -5.818026,43.39176,197.65
+            -5.817994,43.39172,197.92
+            -5.817943,43.391693,197.64
+            -5.817937,43.391636,197.34
+            -5.817938,43.39159,196.97
+            -5.817954,43.39151,196.27
+            -5.818372,43.390995,190.51
+            -5.818361,43.39112,190.9
+            -5.818358,43.391182,190.93
+            -5.818382,43.39125,191.31
+            -5.818366,43.391296,200.23
+            -5.818366,43.391346,200.36
+            -5.818347,43.391407,200.32
+            -5.818299,43.39146,200.15
+            -5.818256,43.391506,200.12
+            -5.818193,43.391514,199.78
+            -5.818125,43.391487,199.62
+            -5.818073,43.391457,199.76
+            -5.818015,43.391426,200.26
+            -5.817918,43.391403,200.25
+            -5.817839,43.39137,200.2
+            -5.817783,43.39134,200.22
+            -5.817726,43.391304,200.36
+            -5.817656,43.391273,200.57
+            -5.817598,43.39125,200.89
+            -5.817541,43.391216,201.09
+            -5.817491,43.39119,201.23
+            -5.817436,43.39115,201.68
+            -5.81737,43.391117,202.55
+            -5.817283,43.391064,204.56
+            -5.817233,43.39103,205.24
+            -5.817134,43.39096,205.89
+            -5.81706,43.390915,206.48
+            -5.816994,43.390873,206.98
+            -5.816943,43.390823,207.24
+            -5.816925,43.390778,207.33
+            -5.816879,43.39074,207.64
+            -5.816815,43.390697,208
+            -5.816768,43.390667,208.34
+            -5.816701,43.390633,208.73
+            -5.81662,43.39059,209.14
+            -5.816572,43.39056,209.3
+            -5.816472,43.39052,210.06
+            -5.816396,43.390484,210.5
+            -5.816311,43.39044,211.25
+            -5.816233,43.390408,211.49
+            -5.816132,43.39036,212.12
+            -5.81601,43.39031,212.41
+            -5.815931,43.390274,212.37
+            -5.815861,43.390247,212.36
+            -5.815788,43.39022,212.35
+            -5.815692,43.390186,212.26
+            -5.815592,43.39016,212.5
+            -5.815504,43.39011,213.23
+            -5.815425,43.39005,213.82
+            -5.815381,43.39001,214.06
+            -5.815287,43.38996,214.38
+            -5.815228,43.38994,214.55
+            -5.815147,43.38991,215.19
+            -5.814705,43.3898,216.79
+            -5.814624,43.38979,218.85
+            -5.814532,43.389732,219.59
+            -5.814456,43.38968,219.6
+            -5.814252,43.389637,219.38
+            -5.814147,43.389603,219.61
+            -5.814071,43.389576,220.05
+            -5.813986,43.38954,220.01
+            -5.81391,43.389496,220.16
+            -5.813841,43.389473,220.26
+            -5.813769,43.389465,220.41
+            -5.81356,43.38944,219.58
+            -5.813324,43.38944,218.62
+            -5.81308,43.38939,218.17
+            -5.812939,43.38925,218.79
+            -5.812875,43.389256,220.7
+            -5.812736,43.38921,222.84
+            -5.81265,43.3892,223.87
+            -5.812584,43.38914,224.13
+            -5.812496,43.389122,224.67
+            -5.812351,43.389076,225.66
+            -5.812224,43.38906,226.15
+            -5.812152,43.389053,226.42
+            -5.812088,43.389038,226.69
+            -5.812014,43.38903,226.27
+            -5.811943,43.38903,225.59
+            -5.811874,43.389027,224.82
+            -5.811794,43.389034,223.95
+            -5.811705,43.389034,222.5
+            -5.811621,43.389027,220.98
+            -5.811565,43.389004,211.29
+            -5.811476,43.388996,208.33
+            -5.811383,43.388985,206.7
+            -5.81132,43.388973,204.51
+            -5.811254,43.388947,202.04
+            -5.811174,43.388905,201.28
+            -5.811128,43.388874,201.08
+            -5.811058,43.38883,200.76
+            -5.810975,43.388794,200.56
+            -5.810907,43.38877,200.32
+            -5.810842,43.388752,199.96
+            -5.810764,43.388744,199.12
+            -5.810683,43.38874,198.51
+            -5.81058,43.388737,197.75
+            -5.810518,43.38873,197.33
+            -5.810451,43.388725,196.71
+            -5.81038,43.388718,195.67
+            -5.810302,43.38872,193.96
+            -5.810226,43.388706,192.72
+            -5.81015,43.388718,192.93
+            -5.810086,43.388706,193.23
+            -5.810026,43.38872,193.52
+            -5.809973,43.38876,193.48
+            -5.809928,43.388813,193.46
+            -5.80989,43.388863,193.49
+            -5.809857,43.388912,193.82
+            -5.809823,43.38897,193.93
+            -5.809853,43.388912,194.1
+            -5.809885,43.38884,194.16
+            -5.80986,43.3889,193.32
+            -5.809834,43.388954,192.41
+            -5.809811,43.389015,192.09
+            -5.809804,43.389084,192.03
+            -5.809809,43.38914,192.41
+            -5.809816,43.389202,192.87
+            -5.809771,43.389244,193.57
+            -5.809673,43.38924,194.78
+            -5.809604,43.38923,195.26
+            -5.809531,43.389225,195.79
+            -5.809464,43.389217,196.36
+            -5.809387,43.3892,196.51
+            -5.809321,43.389194,195.95
+            -5.809244,43.38918,195.48
+            -5.809182,43.389164,195.19
+            -5.809118,43.38914,194.39
+            -5.809039,43.38913,193.18
+            -5.808957,43.38912,192.19
+            -5.808888,43.389107,191.35
+            -5.808826,43.389095,190.25
+            -5.808087,43.38852,183.37
+            -5.807852,43.388676,193.15
+            -5.80782,43.388622,199.68
+            -5.807822,43.38858,203.11
+            -5.807797,43.38853,205.84
+            -5.807793,43.388454,207.97
+            -5.807795,43.388405,209.14
+            -5.807797,43.38835,210.26
+            -5.807805,43.388294,211.24
+            -5.807813,43.38824,212.07
+            -5.807805,43.388187,212.71
+            -5.807814,43.38812,213.81
+            -5.807822,43.388065,214.36
+            -5.807823,43.388012,214.94
+            -5.807807,43.387962,215.54
+            -5.807781,43.38788,216.46
+            -5.8078,43.387806,216.72
+            -5.807781,43.38776,216.83
+            -5.807739,43.38772,216.72
+            -5.807679,43.3877,216.87
+            -5.807612,43.38771,216.98
+            -5.807541,43.387714,217.02
+            -5.807478,43.38772,216.85
+            -5.807406,43.3877,216.56
+            -5.807452,43.387848,226.05
+            -5.807265,43.387806,227.06
+            -5.807255,43.38785,227.03
+            -5.807259,43.387905,227.06
+            -5.807261,43.387962,227.08
+            -5.807276,43.388027,227.2
+            -5.807288,43.388096,227.37
+            -5.807287,43.388153,227.65
+            -5.807248,43.388206,228.03
+            -5.807319,43.388184,228.81
+            -5.807375,43.388153,228.81
+            -5.807437,43.38811,228.84
+            -5.807486,43.388073,228.9
+            -5.807554,43.388023,228.93
+            -5.807598,43.387978,228.94
+            -5.807619,43.387928,230.05
+            -5.807686,43.387882,231.01
+            -5.807726,43.387844,231.11
+            -5.807787,43.3878,231.24
+            -5.807856,43.38775,231.26
+            -5.807906,43.387707,231
+            -5.80795,43.38767,230.5
+            -5.807996,43.387634,230.02
+            -5.808046,43.387596,229.34
+            -5.808103,43.387547,228.35
+            -5.808137,43.387505,227.7
+            -5.808178,43.38746,227.21
+            -5.808228,43.38741,226.78
+            -5.808264,43.38737,226.57
+            -5.808303,43.387333,226.33
+            -5.808347,43.387283,226.04
+            -5.808384,43.38724,225.81
+            -5.808435,43.387196,225.49
+            -5.808489,43.38715,225.16
+            -5.808539,43.3871,224.92
+            -5.808581,43.38706,224.76
+            -5.80862,43.387016,224.67
+            -5.808672,43.386963,224.49
+            -5.808717,43.38692,224.39
+            -5.808757,43.38688,224.36
+            -5.808791,43.38684,224.34
+            -5.808828,43.38679,224.41
+            -5.808894,43.38673,224.72
+            -5.808929,43.386692,224.87
+            -5.808991,43.386627,225.2
+            -5.809036,43.386578,225.48
+            -5.809071,43.386536,225.55
+            -5.80911,43.386497,225.46
+            -5.809154,43.38645,225.4
+            -5.809184,43.386406,225.34
+            -5.809217,43.386356,225.19
+            -5.809255,43.386303,225.23
+            -5.809292,43.38625,225.25
+            -5.809332,43.38619,225.26
+            -5.809347,43.386124,225.35
+            -5.809341,43.386066,225.4
+            -5.809383,43.38602,225.35
+            -5.809444,43.385998,225.26
+            -5.809485,43.38594,225.22
+            -5.809491,43.385887,225.37
+            -5.809496,43.385826,225.6
+            -5.809499,43.38577,225.74
+            -5.809524,43.385715,225.95
+            -5.809586,43.385674,225.86
+            -5.809652,43.385647,225.69
+            -5.809721,43.385647,225.77
+            -5.809774,43.385674,225.95
+            -5.809829,43.385723,225.96
+            -5.809874,43.38577,225.87
+            -5.80992,43.385815,225.81
+            -5.809984,43.385864,225.67
+            -5.810038,43.385902,225.65
+            -5.81008,43.385933,225.66
+            -5.810128,43.38597,225.79
+            -5.810184,43.386,226.58
+            -5.810256,43.38605,227.02
+            -5.810346,43.386097,227.38
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Fin</name>
+        <styleUrl>#icon-1899-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -5.810346,43.386097,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>

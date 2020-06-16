@@ -1,8 +1,31 @@
-html, body {
+body {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
     height: 100%;
-    margin: 0;
-    padding: 0;
-  }
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+html {
+  height: 100%;
+}
+
 #map-view {
     height: 100%;
-  }
+}
+
+#titulo{
+  height: 2%;
+  font-size: medium;
+  text-align: center;
+}
+
+#mapas {
+  height: 75%;
+}
+
+#menu {
+  height: 20%;
+}
