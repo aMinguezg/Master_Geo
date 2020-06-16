@@ -28,4 +28,15 @@ html {
 
 #menu {
   height: 20%;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+
+#wms_azul{
+  visibility: hidden;
+}
+
+#wms_verde{
+  visibility: hidden;
 }

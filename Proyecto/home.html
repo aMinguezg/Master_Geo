@@ -6,8 +6,9 @@
     <title>Proyecto Adrian</title>
     <link rel="stylesheet" type="text/css" href="style/style.css">
     <script async defer
-        src="https://maps.googleapis.com/maps/api/js?callback=initMap">
+        src="https://maps.googleapis.com/maps/api/js?libraries=places">
     </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="js/script.js"></script>
 </head>
 
@@ -19,7 +20,23 @@
         <section id="wms_verde"></section>
     </section>
     <section id="menu">
-
+        <section id="serviciosWms">
+            <h1>Capas WMS</h1>
+            <button id="btnAzul">Azul</button>
+            <button id="btnVerde">Verde</button>
+            <button id="btnUltimo">Eliminar ultimo</button>
+            <button id="btnTodas">Eliminar todas</button>
+        </section>
+        <section id="capasKml">
+            <h1>Capas KML</h1>
+            <button id="btnNorte">Norte</button>
+            <button id="btnSur">Sur</button>
+            <button id="btnSantiago">Santiago</button>
+            <button id="btnUltima">Eliminar 1</button>
+        </section>
+        <section id="serviciosGoogle">
+            <button id="btnTiendas">Tiendas</button>
+        </section>
     </section>
 </body>
 
