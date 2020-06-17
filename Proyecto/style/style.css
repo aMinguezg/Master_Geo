@@ -6,20 +6,42 @@ body {
     width: 100%;
     overflow-x: hidden;
     overflow-y: hidden;
+    font-family: Helvetica, Arial, sans-serif;
+    background-image: linear-gradient(to bottom, #8EE0E9 , #CBF1F5);
 }
 
 html {
   height: 100%;
+  width: 100%;
+}
+
+button {
+    text-decoration: none;
+    padding: 10px;
+    color: black;
+    background-color: white;
+    border-radius: 12px;
+    border: 2px solid  #1883ba;
+    transition-duration: 0.4s;
+}
+
+button:hover {
+  background-color:#1883ba;
+  color: white;
+  cursor: pointer;
 }
 
 #map-view {
     height: 100%;
+    width: 99%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-#titulo{
+#titulo {
   height: 2%;
   font-size: medium;
   text-align: center;
+  padding-bottom: 1vh;
 }
 
 #mapas {
@@ -28,15 +50,27 @@ html {
 
 #menu {
   height: 20%;
+  width: 100%;
   display: flex;
   flex-wrap: nowrap;
   flex-direction: row;
+  justify-content: space-evenly;
 }
 
-#wms_azul{
+#wms_azul {
   visibility: hidden;
 }
 
-#wms_verde{
+#wms_verde {
   visibility: hidden;
+}
+
+#capasKml,#serviciosWms,#serviciosGoogle {
+  width: 30%;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 }

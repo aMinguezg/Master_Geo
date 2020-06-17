@@ -5,15 +5,14 @@
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
     <title>Proyecto Adrian</title>
     <link rel="stylesheet" type="text/css" href="style/style.css">
-    <script async defer
-        src="https://maps.googleapis.com/maps/api/js?libraries=places">
-    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?libraries=places">
+        </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="js/script.js"></script>
 </head>
 
 <body>
-    <h1 id="titulo">SISTEMA GEOGRAFICO ZONAS VERDES - BICI</h1>
+    <h1 id="titulo">PROTOTIPO SIGRBM (SIG de Rutas verdes en Bicicleta por Madrid)</h1>
     <section id="mapas">
         <section class="map-view" id="map-view"></section>
         <section id="wms_azul"></section>
@@ -21,21 +20,33 @@
     </section>
     <section id="menu">
         <section id="serviciosWms">
-            <h1>Capas WMS</h1>
-            <button id="btnAzul">Azul</button>
-            <button id="btnVerde">Verde</button>
-            <button id="btnUltimo">Eliminar ultimo</button>
-            <button id="btnTodas">Eliminar todas</button>
+            <h1>Sendas verdes y Lagunas en Madrid</h1>
+            <section id="botonesWms">
+                <button id="btnAzul">Lagunas</button>
+                <button id="btnVerde">Verdes</button>
+                <button id="btnUltimo">Quitar reciente</button>
+                <button id="btnTodas">Quitar todas</button>
+            </section>
         </section>
         <section id="capasKml">
-            <h1>Capas KML</h1>
-            <button id="btnNorte">Norte</button>
-            <button id="btnSur">Sur</button>
-            <button id="btnSantiago">Santiago</button>
-            <button id="btnUltima">Eliminar 1</button>
+            <h1>Elige una ruta</h1>
+            <section id="botonesKml">
+                <button id="btnNorte">Ruta Norte</button>
+                <button id="btnBorrarNorte">Quitar R. Norte</button>
+                <button id="btnSur">Ruta Sur</button>
+                <button id="btnBorrarSur">Quitar R. Sur</button>
+                <button id="btnSantiago">Ruta Santiago</button>
+                <button id="btnBorrarSantiago">Quitar R. Santiago</button>
+            </section>
+
         </section>
         <section id="serviciosGoogle">
-            <button id="btnTiendas">Tiendas</button>
+            <h1>Encuentra una tienda de Bicis cerca</h1>
+            <section id="botonesGoogle">
+                <button id="btnTiendas">Empezar a encontrar</button>
+                <button id="btnTiendasEliminar">Dejar de encontrar</button>
+                <button id="btnQuitar">Quitar Tiendas</button>
+            </section>
         </section>
     </section>
 </body>
